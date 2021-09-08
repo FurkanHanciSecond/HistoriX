@@ -12,6 +12,18 @@
 		702858B426E495A000C94FDC /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702858B326E495A000C94FDC /* UIView+Ext.swift */; };
 		702858B726E4976C00C94FDC /* HTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702858B626E4976C00C94FDC /* HTableViewCell.swift */; };
 		703FD57E26E49CFD0077C764 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703FD57D26E49CFD0077C764 /* AlertService.swift */; };
+		70B36BEF26E9362300BD55E3 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B36BEE26E9362300BD55E3 /* UITableView+Ext.swift */; };
+		70B36BF226E936C200BD55E3 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B36BF126E936C200BD55E3 /* HistoryModel.swift */; };
+		70B36BF526E9370000BD55E3 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B36BF426E9370000BD55E3 /* HTTPMethod.swift */; };
+		70B36BF726E9372E00BD55E3 /* HTTPStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B36BF626E9372E00BD55E3 /* HTTPStatus.swift */; };
+		70B36BFA26E9376B00BD55E3 /* HistoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B36BF926E9376B00BD55E3 /* HistoryError.swift */; };
+		70B36BFF26E9383800BD55E3 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B36BFE26E9383800BD55E3 /* RouterProtocol.swift */; };
+		70B36C0126E9389400BD55E3 /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B36C0026E9389400BD55E3 /* HTTPHeader.swift */; };
+		70B36C0326E9399E00BD55E3 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B36C0226E9399E00BD55E3 /* ParameterEncoding.swift */; };
+		70B36C0626E939E400BD55E3 /* ServiceClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B36C0526E939E400BD55E3 /* ServiceClientProtocol.swift */; };
+		70B36C0826E93B3C00BD55E3 /* NetworkLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B36C0726E93B3C00BD55E3 /* NetworkLog.swift */; };
+		70B36C0B26E93C7600BD55E3 /* DateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B36C0A26E93C7600BD55E3 /* DateService.swift */; };
+		70B36C0E26E93DA000BD55E3 /* ServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B36C0D26E93DA000BD55E3 /* ServiceClient.swift */; };
 		70D0BC7826E3F14000897726 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D0BC7726E3F14000897726 /* UIColor+Ext.swift */; };
 		70E4F8A426E3F05500097325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E4F8A326E3F05500097325 /* AppDelegate.swift */; };
 		70E4F8A626E3F05500097325 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E4F8A526E3F05500097325 /* SceneDelegate.swift */; };
@@ -26,6 +38,18 @@
 		702858B326E495A000C94FDC /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		702858B626E4976C00C94FDC /* HTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTableViewCell.swift; sourceTree = "<group>"; };
 		703FD57D26E49CFD0077C764 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		70B36BEE26E9362300BD55E3 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		70B36BF126E936C200BD55E3 /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
+		70B36BF426E9370000BD55E3 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		70B36BF626E9372E00BD55E3 /* HTTPStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatus.swift; sourceTree = "<group>"; };
+		70B36BF926E9376B00BD55E3 /* HistoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryError.swift; sourceTree = "<group>"; };
+		70B36BFE26E9383800BD55E3 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		70B36C0026E9389400BD55E3 /* HTTPHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
+		70B36C0226E9399E00BD55E3 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		70B36C0526E939E400BD55E3 /* ServiceClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceClientProtocol.swift; sourceTree = "<group>"; };
+		70B36C0726E93B3C00BD55E3 /* NetworkLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLog.swift; sourceTree = "<group>"; };
+		70B36C0A26E93C7600BD55E3 /* DateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateService.swift; sourceTree = "<group>"; };
+		70B36C0D26E93DA000BD55E3 /* ServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceClient.swift; sourceTree = "<group>"; };
 		70D0BC7726E3F14000897726 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		70E4F8A026E3F05500097325 /* HistoriX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HistoriX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E4F8A326E3F05500097325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +74,7 @@
 		702858B026E4952C00C94FDC /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				70B36C0926E93C1900BD55E3 /* Date */,
 				702858B126E4953700C94FDC /* Constants.swift */,
 				703FD57D26E49CFD0077C764 /* AlertService.swift */,
 			);
@@ -62,6 +87,87 @@
 				702858B626E4976C00C94FDC /* HTableViewCell.swift */,
 			);
 			path = HistoryCell;
+			sourceTree = "<group>";
+		};
+		70B36BED26E9346500BD55E3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				70B36C0C26E93D9200BD55E3 /* Service */,
+				70B36BFC26E9382800BD55E3 /* Protocols */,
+				70B36BF826E9375800BD55E3 /* Errors */,
+				70B36BF326E936E400BD55E3 /* HTTP */,
+				70B36BF026E936B700BD55E3 /* Model */,
+				70B36C0226E9399E00BD55E3 /* ParameterEncoding.swift */,
+				70B36C0726E93B3C00BD55E3 /* NetworkLog.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		70B36BF026E936B700BD55E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				70B36BF126E936C200BD55E3 /* HistoryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		70B36BF326E936E400BD55E3 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				70B36BF426E9370000BD55E3 /* HTTPMethod.swift */,
+				70B36BF626E9372E00BD55E3 /* HTTPStatus.swift */,
+				70B36C0026E9389400BD55E3 /* HTTPHeader.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		70B36BF826E9375800BD55E3 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				70B36BF926E9376B00BD55E3 /* HistoryError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		70B36BFC26E9382800BD55E3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				70B36C0426E939D100BD55E3 /* Client */,
+				70B36BFD26E9382E00BD55E3 /* Router */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		70B36BFD26E9382E00BD55E3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				70B36BFE26E9383800BD55E3 /* RouterProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		70B36C0426E939D100BD55E3 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				70B36C0526E939E400BD55E3 /* ServiceClientProtocol.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		70B36C0926E93C1900BD55E3 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				70B36C0A26E93C7600BD55E3 /* DateService.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		70B36C0C26E93D9200BD55E3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				70B36C0D26E93DA000BD55E3 /* ServiceClient.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		70D0BC7426E3F10900897726 /* Application */ = {
@@ -78,6 +184,7 @@
 			children = (
 				70D0BC7726E3F14000897726 /* UIColor+Ext.swift */,
 				702858B326E495A000C94FDC /* UIView+Ext.swift */,
+				70B36BEE26E9362300BD55E3 /* UITableView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -118,6 +225,7 @@
 		70E4F8A226E3F05500097325 /* HistoriX */ = {
 			isa = PBXGroup;
 			children = (
+				70B36BED26E9346500BD55E3 /* Network */,
 				702858B026E4952C00C94FDC /* Support */,
 				70D0BC7926E3F1B700897726 /* CustomViews */,
 				70D0BC7426E3F10900897726 /* Application */,
@@ -199,15 +307,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70B36C0626E939E400BD55E3 /* ServiceClientProtocol.swift in Sources */,
+				70B36C0826E93B3C00BD55E3 /* NetworkLog.swift in Sources */,
 				70E4F8A426E3F05500097325 /* AppDelegate.swift in Sources */,
+				70B36BFA26E9376B00BD55E3 /* HistoryError.swift in Sources */,
 				70D0BC7826E3F14000897726 /* UIColor+Ext.swift in Sources */,
 				702858B726E4976C00C94FDC /* HTableViewCell.swift in Sources */,
+				70B36C0126E9389400BD55E3 /* HTTPHeader.swift in Sources */,
+				70B36C0E26E93DA000BD55E3 /* ServiceClient.swift in Sources */,
 				70E4F8A626E3F05500097325 /* SceneDelegate.swift in Sources */,
 				702858AF26E493C100C94FDC /* HistoryListVC.swift in Sources */,
+				70B36C0326E9399E00BD55E3 /* ParameterEncoding.swift in Sources */,
+				70B36BF226E936C200BD55E3 /* HistoryModel.swift in Sources */,
 				702858B426E495A000C94FDC /* UIView+Ext.swift in Sources */,
 				70E4F8AE26E3F05500097325 /* HistoriX.xcdatamodeld in Sources */,
+				70B36BF726E9372E00BD55E3 /* HTTPStatus.swift in Sources */,
+				70B36BF526E9370000BD55E3 /* HTTPMethod.swift in Sources */,
+				70B36BEF26E9362300BD55E3 /* UITableView+Ext.swift in Sources */,
+				70B36BFF26E9383800BD55E3 /* RouterProtocol.swift in Sources */,
 				703FD57E26E49CFD0077C764 /* AlertService.swift in Sources */,
 				702858B226E4953700C94FDC /* Constants.swift in Sources */,
+				70B36C0B26E93C7600BD55E3 /* DateService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

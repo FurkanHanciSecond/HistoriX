@@ -10,9 +10,14 @@ import UIKit
 extension UIView {
      func configConstraints(to view : UIView) {
         translatesAutoresizingMaskIntoConstraints = false
-        topAnchor.constraint(equalTo: superview!.topAnchor).isActive = true
-        bottomAnchor.constraint(equalTo: superview!.bottomAnchor).isActive = true
-        trailingAnchor.constraint(equalTo: superview!.trailingAnchor).isActive = true
-        leadingAnchor.constraint(equalTo: superview!.leadingAnchor).isActive = true
+
+        NSLayoutConstraint.activate([
+            topAnchor.constraint(equalTo: superview!.topAnchor),
+            bottomAnchor.constraint(equalTo: superview!.bottomAnchor),
+            trailingAnchor.constraint(equalTo: superview!.trailingAnchor),
+            leadingAnchor.constraint(equalTo: superview!.leadingAnchor),
+        
+        ])
+       
     }
 }

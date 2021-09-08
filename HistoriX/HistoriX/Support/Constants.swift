@@ -9,6 +9,7 @@ import Foundation
 
 
 struct Constants {
+    static let baseURL = "https://history.muffinlabs.com/date/"
     struct Cell {
         static let cellId = "HistoryCell"
     }
@@ -17,7 +18,6 @@ struct Constants {
         enum Error {
             static let ok = "OK"
             static let oops = "Oops an error occurred"
-            
         }
     }
 }
