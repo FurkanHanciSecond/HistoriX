@@ -12,4 +12,12 @@ struct Constants {
     struct Cell {
         static let cellId = "HistoryCell"
     }
+    
+    struct Text {
+        enum Error {
+            static let ok = "OK"
+            static let oops = "Oops an error occurred"
+            
+        }
+    }
 }
