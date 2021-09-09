@@ -8,7 +8,7 @@
 import Foundation
 
 
-enum NetworkLogger {
+struct NetworkLog {
 
   static func log(request: URLRequest,
                   fileName: String = #file,
