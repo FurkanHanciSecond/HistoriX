@@ -24,6 +24,7 @@
 		70B36C0826E93B3C00BD55E3 /* NetworkLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B36C0726E93B3C00BD55E3 /* NetworkLog.swift */; };
 		70B36C0B26E93C7600BD55E3 /* DateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B36C0A26E93C7600BD55E3 /* DateService.swift */; };
 		70B36C0E26E93DA000BD55E3 /* ServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B36C0D26E93DA000BD55E3 /* ServiceClient.swift */; };
+		70B6840526EA947300CF1F81 /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B6840426EA947300CF1F81 /* WelcomeRouter.swift */; };
 		70D0BC7826E3F14000897726 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D0BC7726E3F14000897726 /* UIColor+Ext.swift */; };
 		70E4F8A426E3F05500097325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E4F8A326E3F05500097325 /* AppDelegate.swift */; };
 		70E4F8A626E3F05500097325 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E4F8A526E3F05500097325 /* SceneDelegate.swift */; };
@@ -50,6 +51,7 @@
 		70B36C0726E93B3C00BD55E3 /* NetworkLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLog.swift; sourceTree = "<group>"; };
 		70B36C0A26E93C7600BD55E3 /* DateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateService.swift; sourceTree = "<group>"; };
 		70B36C0D26E93DA000BD55E3 /* ServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceClient.swift; sourceTree = "<group>"; };
+		70B6840426EA947300CF1F81 /* WelcomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
 		70D0BC7726E3F14000897726 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		70E4F8A026E3F05500097325 /* HistoriX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HistoriX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E4F8A326E3F05500097325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				70B36BFE26E9383800BD55E3 /* RouterProtocol.swift */,
+				70B6840426EA947300CF1F81 /* WelcomeRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				70D0BC7826E3F14000897726 /* UIColor+Ext.swift in Sources */,
 				702858B726E4976C00C94FDC /* HTableViewCell.swift in Sources */,
 				70B36C0126E9389400BD55E3 /* HTTPHeader.swift in Sources */,
+				70B6840526EA947300CF1F81 /* WelcomeRouter.swift in Sources */,
 				70B36C0E26E93DA000BD55E3 /* ServiceClient.swift in Sources */,
 				70E4F8A626E3F05500097325 /* SceneDelegate.swift in Sources */,
 				702858AF26E493C100C94FDC /* HistoryListVC.swift in Sources */,

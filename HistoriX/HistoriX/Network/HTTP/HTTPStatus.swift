@@ -8,6 +8,6 @@
 import Foundation
 
 enum HTTPStatus : Int {
-    case succses = 200
+    case success = 200
     case fail = 404
 }

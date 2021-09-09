@@ -9,7 +9,7 @@ import Foundation
 
 
 struct Constants {
-    static let baseURL = "https://history.muffinlabs.com/date/"
+    static let baseURL = "history.muffinlabs.com"
     struct Cell {
         static let cellId = "HistoryCell"
     }
