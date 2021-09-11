@@ -19,7 +19,7 @@ class HistoryListViewModel : HistoryListViewModelProtocol {
   
     var datas: [Welcome] {
         model.datas
-         .sorted { $0.id < $1.id }
+            .sorted { $0.date < $1.date }
      }
     
     private let model: HistoryListModelProtocol

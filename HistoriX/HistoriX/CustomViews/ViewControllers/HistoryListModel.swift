@@ -25,7 +25,7 @@ class HistoryListModel : HistoryListModelProtocol {
             case .success(let data):
                 DispatchQueue.main.async {
                     self.datas = data
-                    print()
+                    print(self.datas)
                     content()
                 }
                 

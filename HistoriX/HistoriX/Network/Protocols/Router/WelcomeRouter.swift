@@ -24,7 +24,7 @@ enum WelcomeRouter : RouterProtocol {
     var path: String {
         switch self {
         case .getDatFromWelcome:
-            return "/1/1"
+            return "/date/1/1"
         }
     }
     

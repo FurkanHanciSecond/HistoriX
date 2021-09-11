@@ -5,13 +5,11 @@
 //  Created by Furkan Hanci on 9/8/21.
 //
 
-import Foundation
-
 
 import Foundation
 
 
- // Here we are review basic HTTP URL keywords like "Host" , "Path" etc.
+ // Here we are review basic HTTP schema URL components like "Host" , "Path" etc.
 
 
 protocol RouterProtocol {

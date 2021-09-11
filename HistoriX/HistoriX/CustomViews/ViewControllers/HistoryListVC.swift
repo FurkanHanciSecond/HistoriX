@@ -11,7 +11,7 @@ import UIKit
     
 class HistoryListVC : UIViewController {
     
-    public var viewModel : HistoryListViewModel {
+    public var viewModel = HistoryListViewModel() {
         didSet {
          configureUI()
         }
@@ -37,9 +37,10 @@ class HistoryListVC : UIViewController {
         title = "HistoriX"
         configureUI()
     }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
-        
+   
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getDatas()
     }
 
     override func didReceiveMemoryWarning() {

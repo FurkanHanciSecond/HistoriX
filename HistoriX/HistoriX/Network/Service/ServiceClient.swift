@@ -9,8 +9,6 @@ import Foundation
 
 
 final class HistoryService : HistoryServiceDelegate {
-    
-    static let shared = HistoryService()
 
     
     func HistoryRequest<K: Codable>(router: RouterProtocol, decodingType: K.Type, completion: @escaping (Result<K, HistoryError>) -> Void) {
@@ -52,16 +50,16 @@ final class HistoryService : HistoryServiceDelegate {
 
         do {
           let decoder = JSONDecoder()
-          decoder.keyDecodingStrategy = .convertFromSnakeCase
-
           let model = try decoder.decode(K.self, from: data)
+            
           NetworkLog.log(response: response, model: model, error: error)
             DispatchQueue.main.async {
                 completion(.success(model))
 
             }
         } catch {
-          completion(.failure(.decodingError))
+            completion(.failure(.decodingError))
+            print(error.localizedDescription)
         }
       }
       .resume()

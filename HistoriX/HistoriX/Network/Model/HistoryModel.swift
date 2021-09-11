@@ -14,7 +14,6 @@ import Foundation
 struct Welcome: Codable {
     let date: String
     let url: String
-    let id : Int
     let data: DataClass
 }
 
