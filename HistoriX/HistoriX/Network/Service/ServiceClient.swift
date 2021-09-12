@@ -26,8 +26,8 @@ final class HistoryService : HistoryServiceDelegate {
 
       let session = URLSession(configuration: .default)
 
-      session.dataTask(with: request) { (data, response, error) in
-        guard error == nil else {
+      session.dataTask(with: request) { (data, response, testerror) in
+        guard testerror == nil else {
           completion(.failure(.genericError))
           return
         }
@@ -38,7 +38,7 @@ final class HistoryService : HistoryServiceDelegate {
         }
 
         guard response.statusCode == HTTPStatus.success.rawValue else {
-          NetworkLog.log(response: response, error: error)
+          NetworkLog.log(response: response, error: testerror)
           completion(.failure(.responseError))
           return
         }
@@ -52,16 +52,18 @@ final class HistoryService : HistoryServiceDelegate {
           let decoder = JSONDecoder()
           let model = try decoder.decode(K.self, from: data)
             
-          NetworkLog.log(response: response, model: model, error: error)
+          NetworkLog.log(response: response, model: model, error: testerror)
             DispatchQueue.main.async {
                 completion(.success(model))
 
             }
         } catch {
-            completion(.failure(.decodingError))
-            print(error.localizedDescription)
+            
+            print(error)
         }
+        
       }
+      
       .resume()
     }
            

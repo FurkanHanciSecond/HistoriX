@@ -8,8 +8,6 @@
 import Foundation
 
 
-import Foundation
-
 // MARK: - Welcome
 struct Welcome: Codable {
     let date: String

@@ -13,8 +13,8 @@ class AlertManager {
     title: String = Constants.Text.Error.oops,
     message: String,
     alertAction: (() -> Void)? = nil,
-    viewController: UIViewController?
-  ) {
+    viewController: UIViewController?)
+   {
     DispatchQueue.main.async {
       let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
       let action = UIAlertAction(title: Constants.Text.Error.ok, style: .default) { action in
