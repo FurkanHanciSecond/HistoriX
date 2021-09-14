@@ -10,12 +10,11 @@ import UIKit
 protocol HistoryListViewModelProtocol {
   var datas: [Welcome] { get }
     var viewBackground : UIColor { get }
-
   func getDatas(content: @escaping () -> Void, errorContent: @escaping (HistoryError) -> Void)
 }
 
 
-class HistoryListViewModel : HistoryListViewModelProtocol {    
+class HistoryListViewModel : HistoryListViewModelProtocol {
   
     var datas: [Welcome] {
         model.datas

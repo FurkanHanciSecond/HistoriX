@@ -32,7 +32,7 @@ class HTableViewCell: UITableViewCell {
         TestLabel.translatesAutoresizingMaskIntoConstraints = false
         TestLabel.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         TestLabel.leadingAnchor.constraint(equalTo: leadingAnchor , constant: 15).isActive = true
-        TestLabel.heightAnchor.constraint(equalToConstant: 15)
+        TestLabel.heightAnchor.constraint(equalToConstant: 15).isActive = true
         TestLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         
     }

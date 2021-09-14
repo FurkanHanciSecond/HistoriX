@@ -58,7 +58,7 @@ final class HistoryService : HistoryServiceDelegate {
 
             }
         } catch {
-            
+            completion(.failure(.decodingError))
             print(error)
         }
         

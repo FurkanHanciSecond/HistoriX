@@ -7,8 +7,6 @@
 
 import UIKit
 
-
-    
 class HistoryListVC : UIViewController {
     
     public var viewModel = HistoryListViewModel() {
