@@ -12,7 +12,6 @@
 		702858AF26E493C100C94FDC /* HistoryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702858AE26E493C100C94FDC /* HistoryListVC.swift */; };
 		702858B226E4953700C94FDC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702858B126E4953700C94FDC /* Constants.swift */; };
 		702858B426E495A000C94FDC /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702858B326E495A000C94FDC /* UIView+Ext.swift */; };
-		702858B726E4976C00C94FDC /* HTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702858B626E4976C00C94FDC /* HTableViewCell.swift */; };
 		703FD57E26E49CFD0077C764 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703FD57D26E49CFD0077C764 /* AlertService.swift */; };
 		70B36BEF26E9362300BD55E3 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B36BEE26E9362300BD55E3 /* UITableView+Ext.swift */; };
 		70B36BF226E936C200BD55E3 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B36BF126E936C200BD55E3 /* HistoryModel.swift */; };
@@ -41,7 +40,6 @@
 		702858AE26E493C100C94FDC /* HistoryListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListVC.swift; sourceTree = "<group>"; };
 		702858B126E4953700C94FDC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		702858B326E495A000C94FDC /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
-		702858B626E4976C00C94FDC /* HTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTableViewCell.swift; sourceTree = "<group>"; };
 		703FD57D26E49CFD0077C764 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		70B36BEE26E9362300BD55E3 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		70B36BF126E936C200BD55E3 /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
@@ -85,14 +83,6 @@
 				703FD57D26E49CFD0077C764 /* AlertService.swift */,
 			);
 			path = Support;
-			sourceTree = "<group>";
-		};
-		702858B526E4974800C94FDC /* HistoryCell */ = {
-			isa = PBXGroup;
-			children = (
-				702858B626E4976C00C94FDC /* HTableViewCell.swift */,
-			);
-			path = HistoryCell;
 			sourceTree = "<group>";
 		};
 		70B36BED26E9346500BD55E3 /* Network */ = {
@@ -199,7 +189,6 @@
 		70D0BC7926E3F1B700897726 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				702858B526E4974800C94FDC /* HistoryCell */,
 				70D0BC7A26E3F1C200897726 /* ViewControllers */,
 			);
 			path = CustomViews;
@@ -322,7 +311,6 @@
 				70B36BFA26E9376B00BD55E3 /* HistoryError.swift in Sources */,
 				702285FE26EC7885000DC23D /* HistoryListModel.swift in Sources */,
 				70D0BC7826E3F14000897726 /* UIColor+Ext.swift in Sources */,
-				702858B726E4976C00C94FDC /* HTableViewCell.swift in Sources */,
 				70B36C0126E9389400BD55E3 /* HTTPHeader.swift in Sources */,
 				70B6840526EA947300CF1F81 /* WelcomeRouter.swift in Sources */,
 				70B36C0E26E93DA000BD55E3 /* ServiceClient.swift in Sources */,

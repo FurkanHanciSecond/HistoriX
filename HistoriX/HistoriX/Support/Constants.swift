@@ -15,11 +15,17 @@ struct Constants {
     }
     
     struct Text {
+        
+        enum Bar {
+          static let history = "Histories"
+        }
+        
         enum Error {
             static let ok = "OK"
             static let oops = "Oops an error occurred"
         }
     }
+       
     
     struct Style {
         enum Color {

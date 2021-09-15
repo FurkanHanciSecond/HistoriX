@@ -14,19 +14,10 @@ class HistoryListVC : UIViewController {
          configureUI()
         }
     }
-    
-    private func getDatas() {
-        viewModel.getDatas { [weak self] in
-            self?.HistoryTableView.reloadDataMainThread()
-        } errorContent: { err in
-            AlertManager.showAlert(message: err.rawValue, viewController: self)
-        }
 
-    }
     
     private lazy var HistoryTableView : UITableView = {
        let table = UITableView()
-        table.backgroundColor = UIColor.mainBackground
         return table
     }()
 
@@ -46,7 +37,19 @@ class HistoryListVC : UIViewController {
         AlertManager.showAlert(title: "Memory Warning", message: "Please restart the app", alertAction: nil , viewController: self)
     }
 
+    
+    
+// MARK: - Configures
+    
+    private func getDatas() {
+        viewModel.getDatas { [weak self] in
+            self?.HistoryTableView.reloadDataMainThread()
+        } errorContent: { err in
+            AlertManager.showAlert(message: err.rawValue, viewController: self)
+        }
 
+    }
+    
     private func configureUI() {
         view.addSubview(HistoryTableView)
         self.HistoryTableView.delegate = self
@@ -54,22 +57,29 @@ class HistoryListVC : UIViewController {
         self.HistoryTableView.rowHeight = 90
        self.HistoryTableView.layer.cornerRadius = 15
         self.view.backgroundColor = viewModel.viewBackground
-        self.HistoryTableView.register(HTableViewCell.self, forCellReuseIdentifier: Constants.Cell.cellId)
+        self.HistoryTableView.register(UITableViewCell.self, forCellReuseIdentifier: Constants.Cell.cellId)
         self.HistoryTableView.configConstraints(to: view)
+        self.view.backgroundColor = viewModel.viewBackground
+        self.title = viewModel.title
     }
 
 }
 
+// MARK: - UITableViewDataSource and Delegate
 
 extension HistoryListVC : UITableViewDelegate , UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let HCell = HistoryTableView.dequeueReusableCell(withIdentifier: Constants.Cell.cellId) as! HTableViewCell
-        return HCell
+        let cell = HistoryTableView.dequeueReusableCell(withIdentifier: Constants.Cell.cellId, for: indexPath)
+        let historyDatas = viewModel.datas[indexPath.row]
+        cell.textLabel?.attributedText = viewModel.title(for: historyDatas)
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
+        cell.selectionStyle = .none
+        return cell
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        viewModel.datas.count
     }
 
 }
