@@ -8,8 +8,8 @@
 import UIKit
 
 protocol HistoryListViewModelProtocol {
-  var datas: [Welcome] { get }
-    var viewBackground : UIColor { get }
+  var datas: [MainModel]? { get }
+    var viewBackground : UIColor { get }
     var title: String { get }
   func getDatas(content: @escaping () -> Void, errorContent: @escaping (HistoryError) -> Void)
 }
@@ -17,10 +17,10 @@ protocol HistoryListViewModelProtocol {
 
 class HistoryListViewModel : HistoryListViewModelProtocol {
   
-    var datas: [Welcome] {
-        model.datas
-            .sorted { $0.date < $1.date }
-     }
+    var datas: [MainModel]? {
+        model.datas?.data.events
+
+    }
     
     private let model: HistoryListModelProtocol
     
@@ -31,11 +31,11 @@ class HistoryListViewModel : HistoryListViewModelProtocol {
 
     func getDatas(content: @escaping () -> Void, errorContent: @escaping (HistoryError) -> Void) {
         model.getDatas(content: content, errorContent: errorContent)
-
     }
     
-    func title(for datas: Welcome) -> NSMutableAttributedString {
-        let title = NSMutableAttributedString(string: "#\(datas.date) \(datas.data)")
+    func title(for datas: MainModel?) -> NSMutableAttributedString {
+        let text = (datas?.text ?? "") + " " + (datas?.year ?? "")
+        let title = NSMutableAttributedString(string: text)
       return title
     }
     

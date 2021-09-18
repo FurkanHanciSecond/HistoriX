@@ -43,7 +43,7 @@ class HistoryListVC : UIViewController {
     
     private func getDatas() {
         viewModel.getDatas { [weak self] in
-            self?.HistoryTableView.reloadDataMainThread()
+            self?.HistoryTableView.reloadData()
         } errorContent: { err in
             AlertManager.showAlert(message: err.rawValue, viewController: self)
         }
@@ -71,7 +71,7 @@ extension HistoryListVC : UITableViewDelegate , UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = HistoryTableView.dequeueReusableCell(withIdentifier: Constants.Cell.cellId, for: indexPath)
-        let historyDatas = viewModel.datas[indexPath.row]
+        let historyDatas = viewModel.datas?[indexPath.row]
         cell.textLabel?.attributedText = viewModel.title(for: historyDatas)
         cell.textLabel?.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
         cell.selectionStyle = .none
@@ -79,7 +79,7 @@ extension HistoryListVC : UITableViewDelegate , UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.datas.count
+        viewModel.datas?.count ?? 0
     }
 
 }

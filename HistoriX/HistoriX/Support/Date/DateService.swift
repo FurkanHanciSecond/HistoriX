@@ -13,7 +13,7 @@ class DateService {
     
     private init() { }
     
-    func getCurrentDate() {
+    func getCurrentMonth() -> Int {
         let currentDate = Date()
 
         let nameFormatter = DateFormatter()
@@ -25,5 +25,21 @@ class DateService {
         print(name)
         print(index)
         
+        return index
+    }
+    
+    
+    func getCurrentDayOfMonth() -> Int {
+      
+        let formatter = DateFormatter()
+        let now = Date()
+        let dateString = formatter.string(from:now)
+         let date = formatter.date(from: dateString)
+        formatter.dateFormat = "yyyy"
+        let day = formatter.string(from: date!)
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss 'UTC'"
+        print(day) // 2018 12 24
+        
+        return Int(day)!
     }
 }

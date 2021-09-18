@@ -57,7 +57,7 @@ final class HistoryService : HistoryServiceDelegate {
                 completion(.success(model))
 
             }
-        } catch {
+        } catch  {
             completion(.failure(.decodingError))
             print(error)
         }

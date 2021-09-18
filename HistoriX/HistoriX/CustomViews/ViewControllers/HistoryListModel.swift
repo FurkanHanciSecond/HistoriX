@@ -9,13 +9,13 @@ import Foundation
 
 
 protocol HistoryListModelProtocol {
-    var datas : [Welcome] { get set }
+    var datas : Welcome? { get set }
     func getDatas(content: @escaping () -> Void, errorContent: @escaping (HistoryError) -> Void)
 
 }
 
 class HistoryListModel : HistoryListModelProtocol {
-    var datas: [Welcome] = []
+    var datas: Welcome?
     private let service : HistoryServiceDelegate = HistoryService()
 
     
@@ -24,7 +24,7 @@ class HistoryListModel : HistoryListModelProtocol {
             switch result {
             case .success(let data):
                 DispatchQueue.main.async {
-                    self.datas = [data]
+                    self.datas = data
                     print(self.datas)
                     content()
                 }

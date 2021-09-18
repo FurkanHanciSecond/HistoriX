@@ -30,6 +30,7 @@ struct Constants {
     struct Style {
         enum Color {
             static let background = UIColor.systemBackground
+            static let green = UIColor.green
         }
     }
 }
