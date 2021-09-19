@@ -17,7 +17,7 @@ struct Constants {
     struct Text {
         
         enum Bar {
-          static let history = "Histories"
+          static let events = "Events"
         }
         
         enum Error {
@@ -31,6 +31,14 @@ struct Constants {
         enum Color {
             static let background = UIColor.systemBackground
             static let green = UIColor.green
+            static let lightGray = UIColor.systemGray5
+            static let black = UIColor.black
+            static let label = UIColor.label
+        }
+        
+        enum Image {
+            static let arrowRight =  UIImage(systemName: "arrow.right")
+
         }
     }
 }

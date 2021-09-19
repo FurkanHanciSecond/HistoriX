@@ -15,7 +15,7 @@ protocol HistoryListViewModelProtocol {
 }
 
 
-class HistoryListViewModel : HistoryListViewModelProtocol {
+final class HistoryListViewModel : HistoryListViewModelProtocol {
   
     var datas: [MainModel]? {
         model.datas?.data.events
@@ -40,6 +40,6 @@ class HistoryListViewModel : HistoryListViewModelProtocol {
     }
     
     let viewBackground = Constants.Style.Color.background
-    let title = Constants.Text.Bar.history
+    let title = Constants.Text.Bar.events
 
 }

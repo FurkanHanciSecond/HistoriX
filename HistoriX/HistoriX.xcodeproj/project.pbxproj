@@ -13,6 +13,8 @@
 		702858B226E4953700C94FDC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702858B126E4953700C94FDC /* Constants.swift */; };
 		702858B426E495A000C94FDC /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702858B326E495A000C94FDC /* UIView+Ext.swift */; };
 		703FD57E26E49CFD0077C764 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703FD57D26E49CFD0077C764 /* AlertService.swift */; };
+		7065DDD126F7B7F10030A0CE /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065DDD026F7B7F10030A0CE /* HistoryTableViewCell.swift */; };
+		7065DDD526F7BB450030A0CE /* HistoryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065DDD426F7BB450030A0CE /* HistoryLabel.swift */; };
 		708A295E26F3AA76003AACC2 /* HistoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708A295D26F3AA76003AACC2 /* HistoryButton.swift */; };
 		70B36BEF26E9362300BD55E3 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B36BEE26E9362300BD55E3 /* UITableView+Ext.swift */; };
 		70B36BF226E936C200BD55E3 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B36BF126E936C200BD55E3 /* HistoryModel.swift */; };
@@ -43,6 +45,8 @@
 		702858B126E4953700C94FDC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		702858B326E495A000C94FDC /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		703FD57D26E49CFD0077C764 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		7065DDD026F7B7F10030A0CE /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		7065DDD426F7BB450030A0CE /* HistoryLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryLabel.swift; sourceTree = "<group>"; };
 		708A295D26F3AA76003AACC2 /* HistoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryButton.swift; sourceTree = "<group>"; };
 		70B36BEE26E9362300BD55E3 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		70B36BF126E936C200BD55E3 /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
@@ -87,6 +91,22 @@
 				703FD57D26E49CFD0077C764 /* AlertService.swift */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		7065DDD226F7BABB0030A0CE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7065DDD026F7B7F10030A0CE /* HistoryTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7065DDD326F7BB2D0030A0CE /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				7065DDD426F7BB450030A0CE /* HistoryLabel.swift */,
+			);
+			path = Label;
 			sourceTree = "<group>";
 		};
 		708A295C26F3AA6B003AACC2 /* Buttons */ = {
@@ -202,6 +222,8 @@
 		70D0BC7926E3F1B700897726 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				7065DDD326F7BB2D0030A0CE /* Label */,
+				7065DDD226F7BABB0030A0CE /* Cell */,
 				708A295C26F3AA6B003AACC2 /* Buttons */,
 				70D0BC7A26E3F1C200897726 /* ViewControllers */,
 			);
@@ -321,8 +343,10 @@
 			files = (
 				70B36C0626E939E400BD55E3 /* ServiceClientProtocol.swift in Sources */,
 				708A295E26F3AA76003AACC2 /* HistoryButton.swift in Sources */,
+				7065DDD126F7B7F10030A0CE /* HistoryTableViewCell.swift in Sources */,
 				70B36C0826E93B3C00BD55E3 /* NetworkLog.swift in Sources */,
 				70E4F8A426E3F05500097325 /* AppDelegate.swift in Sources */,
+				7065DDD526F7BB450030A0CE /* HistoryLabel.swift in Sources */,
 				70B36BFA26E9376B00BD55E3 /* HistoryError.swift in Sources */,
 				702285FE26EC7885000DC23D /* HistoryListModel.swift in Sources */,
 				70D0BC7826E3F14000897726 /* UIColor+Ext.swift in Sources */,
