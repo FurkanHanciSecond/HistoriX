@@ -13,6 +13,8 @@
 		702858B226E4953700C94FDC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702858B126E4953700C94FDC /* Constants.swift */; };
 		702858B426E495A000C94FDC /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702858B326E495A000C94FDC /* UIView+Ext.swift */; };
 		703FD57E26E49CFD0077C764 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703FD57D26E49CFD0077C764 /* AlertService.swift */; };
+		70525A4326F9D3E50096F803 /* HistoryTabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70525A4226F9D3E50096F803 /* HistoryTabBarControllerViewController.swift */; };
+		70525A4726F9D4FB0096F803 /* SupportMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70525A4626F9D4FB0096F803 /* SupportMeViewController.swift */; };
 		7065DDD126F7B7F10030A0CE /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065DDD026F7B7F10030A0CE /* HistoryTableViewCell.swift */; };
 		7065DDD526F7BB450030A0CE /* HistoryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065DDD426F7BB450030A0CE /* HistoryLabel.swift */; };
 		708A295E26F3AA76003AACC2 /* HistoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708A295D26F3AA76003AACC2 /* HistoryButton.swift */; };
@@ -45,6 +47,8 @@
 		702858B126E4953700C94FDC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		702858B326E495A000C94FDC /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		703FD57D26E49CFD0077C764 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		70525A4226F9D3E50096F803 /* HistoryTabBarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTabBarControllerViewController.swift; sourceTree = "<group>"; };
+		70525A4626F9D4FB0096F803 /* SupportMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportMeViewController.swift; sourceTree = "<group>"; };
 		7065DDD026F7B7F10030A0CE /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		7065DDD426F7BB450030A0CE /* HistoryLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryLabel.swift; sourceTree = "<group>"; };
 		708A295D26F3AA76003AACC2 /* HistoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryButton.swift; sourceTree = "<group>"; };
@@ -91,6 +95,32 @@
 				703FD57D26E49CFD0077C764 /* AlertService.swift */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		70525A4126F9D3AA0096F803 /* HistoryListScreen */ = {
+			isa = PBXGroup;
+			children = (
+				702858AE26E493C100C94FDC /* HistoryListVC.swift */,
+				702285FD26EC7885000DC23D /* HistoryListModel.swift */,
+				702285FF26EC7A15000DC23D /* HistoryListViewModel.swift */,
+			);
+			path = HistoryListScreen;
+			sourceTree = "<group>";
+		};
+		70525A4426F9D4C40096F803 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				70525A4226F9D3E50096F803 /* HistoryTabBarControllerViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		70525A4526F9D4D20096F803 /* SupportMeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				70525A4626F9D4FB0096F803 /* SupportMeViewController.swift */,
+			);
+			path = SupportMeScreen;
 			sourceTree = "<group>";
 		};
 		7065DDD226F7BABB0030A0CE /* Cell */ = {
@@ -222,22 +252,22 @@
 		70D0BC7926E3F1B700897726 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				70D0BC7A26E3F1C200897726 /* Screens */,
 				7065DDD326F7BB2D0030A0CE /* Label */,
 				7065DDD226F7BABB0030A0CE /* Cell */,
 				708A295C26F3AA6B003AACC2 /* Buttons */,
-				70D0BC7A26E3F1C200897726 /* ViewControllers */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
 		};
-		70D0BC7A26E3F1C200897726 /* ViewControllers */ = {
+		70D0BC7A26E3F1C200897726 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				702858AE26E493C100C94FDC /* HistoryListVC.swift */,
-				702285FD26EC7885000DC23D /* HistoryListModel.swift */,
-				702285FF26EC7A15000DC23D /* HistoryListViewModel.swift */,
+				70525A4426F9D4C40096F803 /* TabBar */,
+				70525A4526F9D4D20096F803 /* SupportMeScreen */,
+				70525A4126F9D3AA0096F803 /* HistoryListScreen */,
 			);
-			path = ViewControllers;
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		70E4F89726E3F05500097325 = {
@@ -351,6 +381,7 @@
 				702285FE26EC7885000DC23D /* HistoryListModel.swift in Sources */,
 				70D0BC7826E3F14000897726 /* UIColor+Ext.swift in Sources */,
 				70B36C0126E9389400BD55E3 /* HTTPHeader.swift in Sources */,
+				70525A4726F9D4FB0096F803 /* SupportMeViewController.swift in Sources */,
 				70B6840526EA947300CF1F81 /* WelcomeRouter.swift in Sources */,
 				70B36C0E26E93DA000BD55E3 /* ServiceClient.swift in Sources */,
 				70E4F8A626E3F05500097325 /* SceneDelegate.swift in Sources */,
@@ -360,6 +391,7 @@
 				702858B426E495A000C94FDC /* UIView+Ext.swift in Sources */,
 				70D628B126F2711D007E9E3B /* UIViewController+Ext.swift in Sources */,
 				7022860026EC7A15000DC23D /* HistoryListViewModel.swift in Sources */,
+				70525A4326F9D3E50096F803 /* HistoryTabBarControllerViewController.swift in Sources */,
 				70E4F8AE26E3F05500097325 /* HistoriX.xcdatamodeld in Sources */,
 				70B36BF726E9372E00BD55E3 /* HTTPStatus.swift in Sources */,
 				70B36BF526E9370000BD55E3 /* HTTPMethod.swift in Sources */,

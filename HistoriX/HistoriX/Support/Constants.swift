@@ -18,6 +18,7 @@ struct Constants {
         
         enum Bar {
           static let events = "Events"
+            static let support = "Support"
         }
         
         enum Error {
@@ -34,11 +35,13 @@ struct Constants {
             static let lightGray = UIColor.systemGray5
             static let black = UIColor.black
             static let label = UIColor.label
+            static let red = UIColor.red
         }
         
         enum Image {
             static let arrowRight =  UIImage(systemName: "arrow.right")
-
+           static let events = UIImage(systemName: "list.bullet")
+            static let support = UIImage(systemName: "hand.thumbsup.fill")
         }
     }
 }

@@ -55,7 +55,7 @@ class HistoryListVC : UIViewController {
         self.HistoryTableView.dataSource = self
         self.HistoryTableView.delegate = self
         self.HistoryTableView.rowHeight = 90
-       self.HistoryTableView.layer.cornerRadius = 15
+        self.HistoryTableView.separatorStyle = .none
         self.view.backgroundColor = viewModel.viewBackground
         self.HistoryTableView.register(HistoryTableViewCell.self, forCellReuseIdentifier: Constants.Cell.cellId)
         self.HistoryTableView.configConstraints(to: view)
