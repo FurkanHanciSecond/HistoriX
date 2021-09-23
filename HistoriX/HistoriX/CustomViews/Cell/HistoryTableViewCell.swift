@@ -74,7 +74,7 @@ class HistoryTableViewCell: UITableViewCell {
       }
 
       public func set(data: MainModel) {
-        historyNameLabel.text = data.text
+        historyNameLabel.text = data.year
       }
 
 }

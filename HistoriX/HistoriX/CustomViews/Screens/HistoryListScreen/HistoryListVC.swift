@@ -25,6 +25,7 @@ class HistoryListVC : UIViewController {
         super.viewDidLoad()
         title = "HistoriX"
         configureUI()
+        refreshTableView()
     }
    
     override func viewWillAppear(_ animated: Bool) {
@@ -59,8 +60,31 @@ class HistoryListVC : UIViewController {
         self.view.backgroundColor = viewModel.viewBackground
         self.HistoryTableView.register(HistoryTableViewCell.self, forCellReuseIdentifier: Constants.Cell.cellId)
         self.HistoryTableView.configConstraints(to: view)
+        self.HistoryTableView.removeCells()
         self.view.backgroundColor = viewModel.viewBackground
         self.title = viewModel.title
+    }
+    
+    private func refreshTableView() {
+        self.HistoryTableView.refreshControl = UIRefreshControl()
+        
+        if let refreshControl = HistoryTableView.refreshControl {
+            refreshControl.tintColor = .gray
+            refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+
+        }
+    }
+    
+    @objc private func refresh(_ sender : Any) {
+        self.HistoryTableView.refreshControl?.beginRefreshing()
+        viewModel.getDatas { [weak self] in
+            self?.HistoryTableView.refreshControl?.endRefreshing()
+            self?.HistoryTableView.reloadData()
+        } errorContent: { [ weak self] error in
+            self?.HistoryTableView.refreshControl?.endRefreshing()
+            AlertManager.showAlert(message: error.rawValue, viewController: self)
+        }
+
     }
 
 }

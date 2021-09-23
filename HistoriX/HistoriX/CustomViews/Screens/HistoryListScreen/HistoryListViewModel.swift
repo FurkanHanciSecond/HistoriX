@@ -33,12 +33,6 @@ final class HistoryListViewModel : HistoryListViewModelProtocol {
         model.getDatas(content: content, errorContent: errorContent)
     }
     
-    func title(for datas: MainModel?) -> NSMutableAttributedString {
-        let text = (datas?.text ?? "") + " " + (datas?.year ?? "")
-        let title = NSMutableAttributedString(string: text)
-      return title
-    }
-    
     let viewBackground = Constants.Style.Color.background
     let title = Constants.Text.Bar.events
 
