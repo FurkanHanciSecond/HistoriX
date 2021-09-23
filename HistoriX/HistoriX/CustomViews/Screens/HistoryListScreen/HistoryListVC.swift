@@ -80,7 +80,7 @@ class HistoryListVC : UIViewController {
         viewModel.getDatas { [weak self] in
             self?.HistoryTableView.refreshControl?.endRefreshing()
             self?.HistoryTableView.reloadData()
-        } errorContent: { [ weak self] error in
+        } errorContent: { [weak self] error in
             self?.HistoryTableView.refreshControl?.endRefreshing()
             AlertManager.showAlert(message: error.rawValue, viewController: self)
         }

@@ -20,7 +20,7 @@ class HistoryListModel : HistoryListModelProtocol {
 
     
     func getDatas(content: @escaping () -> Void, errorContent: @escaping (HistoryError) -> Void) {
-        service.HistoryRequest(router: WelcomeRouter.getDatFromWelcome, decodingType: Welcome.self) { result in
+        service.HistoryRequest(router: MainModelRouter.getDatFromWelcome, decodingType: Welcome.self) { result in
             switch result {
             case .success(let data):
                 DispatchQueue.main.async {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		700AD02E26FD003600DC0E2D /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700AD02D26FD003600DC0E2D /* Date+Ext.swift */; };
 		702285FE26EC7885000DC23D /* HistoryListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702285FD26EC7885000DC23D /* HistoryListModel.swift */; };
 		7022860026EC7A15000DC23D /* HistoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702285FF26EC7A15000DC23D /* HistoryListViewModel.swift */; };
 		702858AF26E493C100C94FDC /* HistoryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702858AE26E493C100C94FDC /* HistoryListVC.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		700AD02D26FD003600DC0E2D /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		702285FD26EC7885000DC23D /* HistoryListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListModel.swift; sourceTree = "<group>"; };
 		702285FF26EC7A15000DC23D /* HistoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListViewModel.swift; sourceTree = "<group>"; };
 		702858AE26E493C100C94FDC /* HistoryListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListVC.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 				702858B326E495A000C94FDC /* UIView+Ext.swift */,
 				70B36BEE26E9362300BD55E3 /* UITableView+Ext.swift */,
 				70D628B026F2711D007E9E3B /* UIViewController+Ext.swift */,
+				700AD02D26FD003600DC0E2D /* Date+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				70B36BFA26E9376B00BD55E3 /* HistoryError.swift in Sources */,
 				702285FE26EC7885000DC23D /* HistoryListModel.swift in Sources */,
 				70D0BC7826E3F14000897726 /* UIColor+Ext.swift in Sources */,
+				700AD02E26FD003600DC0E2D /* Date+Ext.swift in Sources */,
 				70B36C0126E9389400BD55E3 /* HTTPHeader.swift in Sources */,
 				70525A4726F9D4FB0096F803 /* SupportMeViewController.swift in Sources */,
 				70B6840526EA947300CF1F81 /* WelcomeRouter.swift in Sources */,

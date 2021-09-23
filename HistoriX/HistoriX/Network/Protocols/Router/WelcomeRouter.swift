@@ -8,7 +8,7 @@
 import Foundation
 
 
-enum WelcomeRouter : RouterProtocol {
+enum MainModelRouter : RouterProtocol {
     private static let baseurl = Constants.baseURL
     
     case getDatFromWelcome
@@ -18,13 +18,13 @@ enum WelcomeRouter : RouterProtocol {
     }
     
     var host: String {
-       return WelcomeRouter.baseurl
+       return MainModelRouter.baseurl
     }
     
     var path: String {
         switch self {
         case .getDatFromWelcome:
-            return "/date/\(DateService.shared.getCurrentMonth())/17"
+            return "/date/\(DateService.shared.getCurrentMonth())/\(DateService.shared.getCurrentDay())"
         }
     }
     

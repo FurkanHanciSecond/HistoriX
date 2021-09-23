@@ -28,18 +28,12 @@ class DateService {
         return index
     }
     
-    
-    func getCurrentDayOfMonth() -> Int {
-      
-        let formatter = DateFormatter()
-        let now = Date()
-        let dateString = formatter.string(from:now)
-         let date = formatter.date(from: dateString)
-        formatter.dateFormat = "yyyy"
-        let day = formatter.string(from: date!)
-        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss 'UTC'"
-        print(day) // 2018 12 24
-        
-        return Int(day)!
+    func getCurrentDay() -> Int {
+        let date = Date()
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.day], from: date)
+        let dayOfMonth = components.day
+        print(dayOfMonth)
+        return dayOfMonth ?? 0
     }
 }

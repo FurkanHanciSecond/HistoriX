@@ -17,7 +17,7 @@ struct Constants {
     struct Text {
         
         enum Bar {
-          static let events = "Events"
+          static let events = "What Happened"
             static let support = "Support"
         }
         
