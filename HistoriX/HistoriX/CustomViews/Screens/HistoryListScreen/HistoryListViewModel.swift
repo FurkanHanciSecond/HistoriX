@@ -33,7 +33,7 @@ final class HistoryListViewModel : HistoryListViewModelProtocol {
         model.getDatas(content: content, errorContent: errorContent)
     }
     
-    let viewBackground = Constants.Style.Color.background
+    let viewBackground = Constants.Style.Color.systembackground
     let title = Constants.Text.Bar.events
 
 }

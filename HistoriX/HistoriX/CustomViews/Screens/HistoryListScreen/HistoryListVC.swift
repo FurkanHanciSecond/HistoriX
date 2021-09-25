@@ -23,7 +23,6 @@ class HistoryListVC : LoadViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "HistoriX"
         configureUI()
         refreshTableView()
     }
@@ -96,13 +95,6 @@ class HistoryListVC : LoadViewController {
 extension HistoryListVC :  UITableViewDataSource , UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = HistoryTableView.dequeueReusableCell(withIdentifier: Constants.Cell.cellId, for: indexPath)
-//        let historyDatas = viewModel.datas?[indexPath.row]
-//        cell.textLabel?.attributedText = viewModel.title(for: historyDatas)
-//        cell.textLabel?.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
-//        cell.selectionStyle = .none
-//        return cell
-        
         let cell = HistoryTableView.dequeueReusableCell(withIdentifier: Constants.Cell.cellId, for: indexPath) as! HistoryTableViewCell
         let events = viewModel.datas?[indexPath.row]
         

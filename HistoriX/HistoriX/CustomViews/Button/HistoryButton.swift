@@ -25,7 +25,7 @@ class HistoryButton: UIButton {
   }
   
   private func configure() {
-    setTitleColor(Constants.Style.Color.background, for: .normal)
+    setTitleColor(Constants.Style.Color.systembackground, for: .normal)
     titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
     
     translatesAutoresizingMaskIntoConstraints = false

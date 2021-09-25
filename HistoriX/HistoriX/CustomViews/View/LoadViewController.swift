@@ -15,13 +15,13 @@ class LoadViewController: UIViewController {
     public func loadingView() {
         containerView = UIView(frame: view.bounds)
         view.addSubview(containerView)
-        containerView.backgroundColor = Constants.Style.Color.background
+        containerView.backgroundColor = Constants.Style.Color.systembackground
          containerView.alpha = 0
         UIView.animate(withDuration: 0.5) {
            self.containerView.alpha = 0.8
          }
         
-        let activityIndicator = UIActivityIndicatorView(style: .medium)
+        let activityIndicator = UIActivityIndicatorView(style: .large)
         containerView.addSubview(activityIndicator)
 
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false

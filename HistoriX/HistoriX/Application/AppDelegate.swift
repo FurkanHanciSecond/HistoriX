@@ -21,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func setupNavigationBar() {
-      UINavigationBar.appearance().barTintColor = Constants.Style.Color.background
-      UINavigationBar.appearance().tintColor = Constants.Style.Color.red
+      UINavigationBar.appearance().barTintColor = Constants.Style.Color.systembackground
+      UINavigationBar.appearance().tintColor = Constants.Style.Color.tabbBar
     }
 
     // MARK: UISceneSession Lifecycle
