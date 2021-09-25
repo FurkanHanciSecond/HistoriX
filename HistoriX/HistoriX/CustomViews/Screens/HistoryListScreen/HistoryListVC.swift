@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HistoryListVC : UIViewController {
+class HistoryListVC : LoadViewController {
     
     public var viewModel = HistoryListViewModel() {
         didSet {
@@ -43,8 +43,10 @@ class HistoryListVC : UIViewController {
 // MARK: - Configures
     
     private func getDatas() {
+        loadingView()
         viewModel.getDatas { [weak self] in
             self?.HistoryTableView.reloadData()
+            self?.dismissLoading()
         } errorContent: { err in
             AlertManager.showAlert(message: err.rawValue, viewController: self)
         }
