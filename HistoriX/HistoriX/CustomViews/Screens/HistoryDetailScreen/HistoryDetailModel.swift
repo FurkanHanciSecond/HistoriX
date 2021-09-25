@@ -9,6 +9,7 @@ import UIKit
 
 protocol HistoryDetailModelProtocol {
     var data : MainModel? { get set }
+    
     func getData(content: @escaping () -> Void , errorContent: @escaping (HistoryError) -> Void)
 }
 

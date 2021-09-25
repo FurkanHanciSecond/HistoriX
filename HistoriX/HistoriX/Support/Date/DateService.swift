@@ -33,7 +33,7 @@ class DateService {
         let calendar = Calendar.current
         let components = calendar.dateComponents([.day], from: date)
         let dayOfMonth = components.day
-        print(dayOfMonth)
-        return dayOfMonth ?? 0
+        print(dayOfMonth!)
+        return dayOfMonth!
     }
 }
