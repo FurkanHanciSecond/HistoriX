@@ -30,12 +30,13 @@ struct Constants {
     
     struct Style {
         enum Color {
-            static let background = UIColor.systemBackground
+            static let systembackground = UIColor.systemBackground
             static let green = UIColor.green
             static let lightGray = UIColor.systemGray5
             static let black = UIColor.black
             static let label = UIColor.label
             static let red = UIColor.red
+            static let tabbBar = UIColor.tabbBarColor
         }
         
         enum Image {
