@@ -25,6 +25,10 @@ struct Constants {
             static let ok = "OK"
             static let oops = "Oops an error occurred"
         }
+        
+        enum Button {
+            static let support = "SUPPORT ME!"
+        }
     }
        
     
