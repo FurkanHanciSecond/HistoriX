@@ -39,6 +39,13 @@ class HistoryTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        configureContainer()
+
+    }
+    
 
     private func configureContainer() {
         containerView.layer.cornerRadius = containerView.frame.height / 5

@@ -151,12 +151,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		708A295C26F3AA6B003AACC2 /* Buttons */ = {
+		708A295C26F3AA6B003AACC2 /* Button */ = {
 			isa = PBXGroup;
 			children = (
 				708A295D26F3AA76003AACC2 /* HistoryButton.swift */,
 			);
-			path = Buttons;
+			path = Button;
 			sourceTree = "<group>";
 		};
 		70B36BED26E9346500BD55E3 /* Network */ = {
@@ -269,7 +269,7 @@
 				70D0BC7A26E3F1C200897726 /* Screens */,
 				7065DDD326F7BB2D0030A0CE /* Label */,
 				7065DDD226F7BABB0030A0CE /* Cell */,
-				708A295C26F3AA6B003AACC2 /* Buttons */,
+				708A295C26F3AA6B003AACC2 /* Button */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
