@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		700AD02E26FD003600DC0E2D /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700AD02D26FD003600DC0E2D /* Date+Ext.swift */; };
+		701641D726FF96C0004BA7E7 /* HistoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701641D626FF96C0004BA7E7 /* HistoryDetailViewController.swift */; };
+		701641DB26FF96FE004BA7E7 /* HistoryDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701641DA26FF96FE004BA7E7 /* HistoryDetailModel.swift */; };
+		701641DD26FF970A004BA7E7 /* HistoryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701641DC26FF970A004BA7E7 /* HistoryDetailViewModel.swift */; };
 		702285FE26EC7885000DC23D /* HistoryListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702285FD26EC7885000DC23D /* HistoryListModel.swift */; };
 		7022860026EC7A15000DC23D /* HistoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702285FF26EC7A15000DC23D /* HistoryListViewModel.swift */; };
 		702858AF26E493C100C94FDC /* HistoryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702858AE26E493C100C94FDC /* HistoryListVC.swift */; };
@@ -45,6 +48,9 @@
 
 /* Begin PBXFileReference section */
 		700AD02D26FD003600DC0E2D /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		701641D626FF96C0004BA7E7 /* HistoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailViewController.swift; sourceTree = "<group>"; };
+		701641DA26FF96FE004BA7E7 /* HistoryDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailModel.swift; sourceTree = "<group>"; };
+		701641DC26FF970A004BA7E7 /* HistoryDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailViewModel.swift; sourceTree = "<group>"; };
 		702285FD26EC7885000DC23D /* HistoryListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListModel.swift; sourceTree = "<group>"; };
 		702285FF26EC7A15000DC23D /* HistoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListViewModel.swift; sourceTree = "<group>"; };
 		702858AE26E493C100C94FDC /* HistoryListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListVC.swift; sourceTree = "<group>"; };
@@ -93,6 +99,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		701641D526FF96A1004BA7E7 /* HistoryDetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				701641D626FF96C0004BA7E7 /* HistoryDetailViewController.swift */,
+				701641DA26FF96FE004BA7E7 /* HistoryDetailModel.swift */,
+				701641DC26FF970A004BA7E7 /* HistoryDetailViewModel.swift */,
+			);
+			path = HistoryDetailScreen;
+			sourceTree = "<group>";
+		};
 		702858B026E4952C00C94FDC /* Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +296,7 @@
 		70D0BC7A26E3F1C200897726 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				701641D526FF96A1004BA7E7 /* HistoryDetailScreen */,
 				70525A4426F9D4C40096F803 /* TabBar */,
 				70525A4526F9D4D20096F803 /* SupportMeScreen */,
 				70525A4126F9D3AA0096F803 /* HistoryListScreen */,
@@ -405,9 +422,11 @@
 				70B36C0E26E93DA000BD55E3 /* ServiceClient.swift in Sources */,
 				70E4F8A626E3F05500097325 /* SceneDelegate.swift in Sources */,
 				702858AF26E493C100C94FDC /* HistoryListVC.swift in Sources */,
+				701641DD26FF970A004BA7E7 /* HistoryDetailViewModel.swift in Sources */,
 				7087ED4826FF101A00027DF8 /* LoadViewController.swift in Sources */,
 				70B36C0326E9399E00BD55E3 /* ParameterEncoding.swift in Sources */,
 				70B36BF226E936C200BD55E3 /* HistoryModel.swift in Sources */,
+				701641D726FF96C0004BA7E7 /* HistoryDetailViewController.swift in Sources */,
 				702858B426E495A000C94FDC /* UIView+Ext.swift in Sources */,
 				70D628B126F2711D007E9E3B /* UIViewController+Ext.swift in Sources */,
 				7022860026EC7A15000DC23D /* HistoryListViewModel.swift in Sources */,
@@ -416,6 +435,7 @@
 				70B36BF726E9372E00BD55E3 /* HTTPStatus.swift in Sources */,
 				70B36BF526E9370000BD55E3 /* HTTPMethod.swift in Sources */,
 				70B36BEF26E9362300BD55E3 /* UITableView+Ext.swift in Sources */,
+				701641DB26FF96FE004BA7E7 /* HistoryDetailModel.swift in Sources */,
 				70B36BFF26E9383800BD55E3 /* RouterProtocol.swift in Sources */,
 				703FD57E26E49CFD0077C764 /* AlertService.swift in Sources */,
 				702858B226E4953700C94FDC /* Constants.swift in Sources */,
