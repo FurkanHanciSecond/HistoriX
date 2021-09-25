@@ -92,7 +92,7 @@ class HistoryListVC : LoadViewController {
 
 // MARK: - UITableViewDataSource
 
-extension HistoryListVC :  UITableViewDataSource , UITableViewDelegate {
+extension HistoryListVC :  UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = HistoryTableView.dequeueReusableCell(withIdentifier: Constants.Cell.cellId, for: indexPath) as! HistoryTableViewCell
@@ -107,4 +107,9 @@ extension HistoryListVC :  UITableViewDataSource , UITableViewDelegate {
         viewModel.datas?.count ?? 0
     }
 
+}
+
+
+extension HistoryListVC : UITableViewDelegate {
+    
 }
