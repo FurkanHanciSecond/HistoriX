@@ -36,6 +36,7 @@ struct Constants {
             static let black = UIColor.black
             static let label = UIColor.label
             static let red = UIColor.red
+            static let white = UIColor.white
             static let tabbBar = UIColor.tabbBarColor
         }
         
