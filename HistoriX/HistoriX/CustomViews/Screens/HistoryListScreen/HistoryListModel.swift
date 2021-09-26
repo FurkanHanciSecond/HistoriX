@@ -11,7 +11,6 @@ import Foundation
 protocol HistoryListModelProtocol {
     var datas : Welcome? { get set }
     func getDatas(content: @escaping () -> Void, errorContent: @escaping (HistoryError) -> Void)
-
 }
 
 class HistoryListModel : HistoryListModelProtocol {
