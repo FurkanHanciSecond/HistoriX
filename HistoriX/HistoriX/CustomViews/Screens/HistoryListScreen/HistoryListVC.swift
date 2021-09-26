@@ -111,5 +111,10 @@ extension HistoryListVC :  UITableViewDataSource {
 
 
 extension HistoryListVC : UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let datas = viewModel.datas?[indexPath.row]
+        let historyDetailViewController = HistoryDetailViewController(mainModel: datas!)
+        navigationController?.pushViewController(historyDetailViewController, animated: true)
+
+    }
 }

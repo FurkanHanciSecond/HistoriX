@@ -9,7 +9,7 @@ import Foundation
 
 
 protocol HistoryListModelProtocol {
-    var datas : Welcome? { get set }
+    var datas : Welcome? { get set }
     func getDatas(content: @escaping () -> Void, errorContent: @escaping (HistoryError) -> Void)
 }
 
@@ -24,7 +24,7 @@ class HistoryListModel : HistoryListModelProtocol {
             case .success(let data):
                 DispatchQueue.main.async {
                     self.datas = data
-                    print(self.datas)
+                    print(self.datas as Any)
                     content()
                 }
                 

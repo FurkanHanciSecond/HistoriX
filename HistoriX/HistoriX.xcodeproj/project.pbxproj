@@ -44,6 +44,7 @@
 		70E4F8AE26E3F05500097325 /* HistoriX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70E4F8AC26E3F05500097325 /* HistoriX.xcdatamodeld */; };
 		70E4F8B026E3F05500097325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70E4F8AF26E3F05500097325 /* Assets.xcassets */; };
 		70E4F8B326E3F05500097325 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E4F8B126E3F05500097325 /* LaunchScreen.storyboard */; };
+		70F286C127005A14004A6800 /* HistoryDetailLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F286C027005A14004A6800 /* HistoryDetailLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		70E4F8AF26E3F05500097325 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70E4F8B226E3F05500097325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70E4F8B426E3F05500097325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70F286C027005A14004A6800 /* HistoryDetailLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				7065DDD426F7BB450030A0CE /* HistoryLabel.swift */,
+				70F286C027005A14004A6800 /* HistoryDetailLabel.swift */,
 			);
 			path = Label;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				70B36BF226E936C200BD55E3 /* HistoryModel.swift in Sources */,
 				701641D726FF96C0004BA7E7 /* HistoryDetailViewController.swift in Sources */,
 				702858B426E495A000C94FDC /* UIView+Ext.swift in Sources */,
+				70F286C127005A14004A6800 /* HistoryDetailLabel.swift in Sources */,
 				70D628B126F2711D007E9E3B /* UIViewController+Ext.swift in Sources */,
 				7022860026EC7A15000DC23D /* HistoryListViewModel.swift in Sources */,
 				70525A4326F9D3E50096F803 /* HistoryTabBarControllerViewController.swift in Sources */,

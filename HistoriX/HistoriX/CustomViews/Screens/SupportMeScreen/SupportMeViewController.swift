@@ -24,12 +24,13 @@ class SupportMeViewController: UIViewController {
         NSLayoutConstraint.activate([
             supportButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: horizontalPadding),
             supportButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -horizontalPadding),
-            supportButton.heightAnchor.constraint(equalToConstant: height)
+            supportButton.heightAnchor.constraint(equalToConstant: height),
+            supportButton.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: -bottomPadding)
+
         ])
         
         supportButton.set(backgroundColor: Constants.Style.Color.tabbBar, title: Constants.Text.Button.support)
         supportButton.addTarget(self, action: #selector(requestForReview), for: .touchUpInside)
-        supportButton.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: -bottomPadding).isActive = true
         
     }
     
