@@ -17,7 +17,7 @@ class LoadViewController: UIViewController {
         view.addSubview(containerView)
         containerView.backgroundColor = Constants.Style.Color.systembackground
          containerView.alpha = 0
-        UIView.animate(withDuration: 0.5) {
+        UIView.animate(withDuration: 0.7) {
            self.containerView.alpha = 0.8
          }
         

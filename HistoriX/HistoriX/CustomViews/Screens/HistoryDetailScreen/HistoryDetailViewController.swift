@@ -8,7 +8,7 @@
 import UIKit
 
 class HistoryDetailViewController: UIViewController {
-    
+    private let detailLabel = HistoryLabel(fontSize: 17, fontWeight: .medium)
     public var viewModel : HistoryDetailViewModel {
         didSet {
             setup()
