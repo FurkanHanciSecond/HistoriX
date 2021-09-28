@@ -8,47 +8,44 @@
 import UIKit
 
 class HistoryDetailViewController: UIViewController {
-
-
     
     public var viewModel : HistoryDetailViewModel {
         didSet {
-            configure()
+            setup()
         }
     }
-    
     
     init(mainModel : MainModel) {
         self.viewModel = HistoryDetailViewModel(mainModel: mainModel)
         super.init(nibName: nil, bundle: nil)
-    }
-
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-      configure()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setup()
+    }
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+      super.viewWillAppear(animated)
         print(viewModel.datas)
     }
     
-    private func setUpTexts(with mainModel : MainModel) {
-        
-    }
+    private func getUserInfo() {
+        viewModel.getData {
+        print("Datas parsed")
+       } errorContent: { error in
+         AlertManager.showAlert(message: error.rawValue, viewController: self)
+       }
+     }
     
-    private func configure() {
-        
+    private func setup() {
+
     }
-    
+ 
  
  
 }
