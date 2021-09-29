@@ -8,7 +8,7 @@
 import UIKit
 
 class HistoryDetailViewController: UIViewController {
-    private let padding : CGFloat = 80
+    private let padding : CGFloat = 100
     public var viewModel : HistoryDetailViewModel {
         didSet {
             setUp()

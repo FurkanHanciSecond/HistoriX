@@ -30,10 +30,10 @@ extension UIView {
     }
     
     func shadow() {
-        layer.shadowColor = Constants.Style.Color.systembackground.cgColor
+        layer.shadowColor = Constants.Style.Color.tabbBar.cgColor
       layer.shadowOffset = CGSize(width: 0, height: 3)
-      layer.shadowOpacity = 0.1
-        layer.shadowRadius = 5
+        layer.shadowOpacity = 0.8
+        layer.shadowRadius = 6
     }
 
     func addBorder() {

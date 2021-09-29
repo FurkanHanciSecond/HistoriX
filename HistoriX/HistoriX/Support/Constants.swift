@@ -14,6 +14,13 @@ struct Constants {
         static let cellId = "HistoryCell"
     }
     
+    struct Notification {
+        static let id = "HistoryNotification"
+        static let title = ""
+        static let subtitle = ""
+        static let body = ""
+    }
+    
     struct Text {
         
         enum Bar {
