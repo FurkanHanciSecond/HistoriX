@@ -26,10 +26,12 @@ class HistoryLabel: UILabel {
       }
 
       private func configure() {
+        translatesAutoresizingMaskIntoConstraints = false
         adjustsFontSizeToFitWidth = true
         minimumScaleFactor = 0.9
-        lineBreakMode = .byTruncatingTail
-        translatesAutoresizingMaskIntoConstraints = false
+        numberOfLines = 0
+        sizeToFit()
+        lineBreakMode = .byWordWrapping
       }
     
 }

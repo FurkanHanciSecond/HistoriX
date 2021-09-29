@@ -21,6 +21,8 @@
 		70525A4726F9D4FB0096F803 /* SupportMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70525A4626F9D4FB0096F803 /* SupportMeViewController.swift */; };
 		7065DDD126F7B7F10030A0CE /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065DDD026F7B7F10030A0CE /* HistoryTableViewCell.swift */; };
 		7065DDD526F7BB450030A0CE /* HistoryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065DDD426F7BB450030A0CE /* HistoryLabel.swift */; };
+		7080A82A270446900075F2F1 /* UILabel+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080A829270446900075F2F1 /* UILabel+Ext.swift */; };
+		7080A82C27044DDD0075F2F1 /* HistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080A82B27044DDD0075F2F1 /* HistoryDetailView.swift */; };
 		7087ED4826FF101A00027DF8 /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7087ED4726FF101900027DF8 /* LoadViewController.swift */; };
 		7087ED4A26FF2F7800027DF8 /* SupportButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7087ED4926FF2F7800027DF8 /* SupportButton.swift */; };
 		708A295E26F3AA76003AACC2 /* HistoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708A295D26F3AA76003AACC2 /* HistoryButton.swift */; };
@@ -62,6 +64,8 @@
 		70525A4626F9D4FB0096F803 /* SupportMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportMeViewController.swift; sourceTree = "<group>"; };
 		7065DDD026F7B7F10030A0CE /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		7065DDD426F7BB450030A0CE /* HistoryLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryLabel.swift; sourceTree = "<group>"; };
+		7080A829270446900075F2F1 /* UILabel+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Ext.swift"; sourceTree = "<group>"; };
+		7080A82B27044DDD0075F2F1 /* HistoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailView.swift; sourceTree = "<group>"; };
 		7087ED4726FF101900027DF8 /* LoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewController.swift; sourceTree = "<group>"; };
 		7087ED4926FF2F7800027DF8 /* SupportButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportButton.swift; sourceTree = "<group>"; };
 		708A295D26F3AA76003AACC2 /* HistoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryButton.swift; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				7087ED4726FF101900027DF8 /* LoadViewController.swift */,
+				7080A82B27044DDD0075F2F1 /* HistoryDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 				70B36BEE26E9362300BD55E3 /* UITableView+Ext.swift */,
 				70D628B026F2711D007E9E3B /* UIViewController+Ext.swift */,
 				700AD02D26FD003600DC0E2D /* Date+Ext.swift */,
+				7080A829270446900075F2F1 /* UILabel+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -414,6 +420,7 @@
 				70B36C0826E93B3C00BD55E3 /* NetworkLog.swift in Sources */,
 				70E4F8A426E3F05500097325 /* AppDelegate.swift in Sources */,
 				7065DDD526F7BB450030A0CE /* HistoryLabel.swift in Sources */,
+				7080A82C27044DDD0075F2F1 /* HistoryDetailView.swift in Sources */,
 				70B36BFA26E9376B00BD55E3 /* HistoryError.swift in Sources */,
 				7087ED4A26FF2F7800027DF8 /* SupportButton.swift in Sources */,
 				702285FE26EC7885000DC23D /* HistoryListModel.swift in Sources */,
@@ -421,6 +428,7 @@
 				700AD02E26FD003600DC0E2D /* Date+Ext.swift in Sources */,
 				70B36C0126E9389400BD55E3 /* HTTPHeader.swift in Sources */,
 				70525A4726F9D4FB0096F803 /* SupportMeViewController.swift in Sources */,
+				7080A82A270446900075F2F1 /* UILabel+Ext.swift in Sources */,
 				70B6840526EA947300CF1F81 /* WelcomeRouter.swift in Sources */,
 				70B36C0E26E93DA000BD55E3 /* ServiceClient.swift in Sources */,
 				70E4F8A626E3F05500097325 /* SceneDelegate.swift in Sources */,

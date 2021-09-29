@@ -8,6 +8,7 @@
 import UIKit
 
 protocol HistoryDetailViewModelProtocol {
+    var viewBackground : UIColor { get }
     var datas: MainModel? { get set }
     var welcome : Welcome? { get }
     func getData(content: @escaping () -> Void, errorContent: @escaping (HistoryError) -> Void)
@@ -34,8 +35,11 @@ final class HistoryDetailViewModel : HistoryDetailViewModelProtocol {
     }
     
   
+    let viewBackground = Constants.Style.Color.systembackground
     
     
 }
+
+
 
 
