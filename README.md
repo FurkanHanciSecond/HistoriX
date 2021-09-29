@@ -1,2 +1,2 @@
 # HistoriX
-iOS App
+iOS App.
