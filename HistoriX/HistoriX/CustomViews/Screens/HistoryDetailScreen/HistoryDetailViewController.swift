@@ -56,7 +56,8 @@ class HistoryDetailViewController: UIViewController {
     
     
     private func setUpDetailView() {
-        let viewHeight : CGFloat = 220
+        let viewHeight : CGFloat = 250
+        detailView.shadow()
         view.addSubview(detailView)
         
         detailView.translatesAutoresizingMaskIntoConstraints = false

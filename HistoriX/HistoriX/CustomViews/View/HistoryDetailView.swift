@@ -27,7 +27,7 @@ class HistoryDetailView: UIView {
     }
     
     private func setDetail() {
-        backgroundColor = .secondarySystemBackground
+        backgroundColor = .systemGroupedBackground
         layer.cornerRadius = 15
         addBorder()
     }

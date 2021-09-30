@@ -16,42 +16,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="middleTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgT-we-c8k">
-                                <rect key="frame" x="92" y="350" width="230" height="58.5"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="HistoriX">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="49"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                                <size key="shadowOffset" width="1" height="-1"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Furkan Hanci" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSe-9n-qEL">
-                                <rect key="frame" x="83" y="840" width="248" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Created by Furkan Hanci" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSe-9n-qEL">
+                                <rect key="frame" x="107" y="840" width="201" height="22"/>
                                 <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="highlightedColor" systemColor="opaqueSeparatorColor"/>
                                 <color key="shadowColor" systemColor="opaqueSeparatorColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HistoriX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1M4-Ks-Ues">
+                                <rect key="frame" x="101" y="331" width="213" height="117"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="117" id="O2j-jM-0s9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="pgT-we-c8k" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="3X7-Pd-Fam"/>
-                            <constraint firstItem="pgT-we-c8k" firstAttribute="centerX" secondItem="jSe-9n-qEL" secondAttribute="centerX" id="6wL-6Z-Tet"/>
-                            <constraint firstItem="jSe-9n-qEL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Irw-FW-9uS"/>
-                            <constraint firstItem="pgT-we-c8k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="306" id="MrO-jb-CNW"/>
-                            <constraint firstItem="jSe-9n-qEL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="83" id="TY6-8M-pnh"/>
-                            <constraint firstItem="pgT-we-c8k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="xI9-DM-hfg"/>
+                            <constraint firstItem="jSe-9n-qEL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="E2O-mh-zAf"/>
+                            <constraint firstItem="1M4-Ks-Ues" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Hob-6l-USw"/>
+                            <constraint firstItem="1M4-Ks-Ues" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="101" id="Obg-RC-A6d"/>
+                            <constraint firstItem="jSe-9n-qEL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="WyK-CS-Aef"/>
+                            <constraint firstItem="1M4-Ks-Ues" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="287" id="jkn-Td-woQ"/>
+                            <constraint firstItem="1M4-Ks-Ues" firstAttribute="centerX" secondItem="jSe-9n-qEL" secondAttribute="centerX" id="r4E-78-gtr"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="50.724637681159422" y="374.33035714285711"/>
         </scene>
     </scenes>
     <resources>
