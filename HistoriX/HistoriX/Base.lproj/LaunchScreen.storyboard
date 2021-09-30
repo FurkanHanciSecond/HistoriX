@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,21 +13,18 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Created by Furkan Hanci" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSe-9n-qEL">
-                                <rect key="frame" x="107" y="840" width="201" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Furkan Hanci" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSe-9n-qEL">
+                                <rect key="frame" x="87" y="625" width="201" height="22"/>
                                 <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="highlightedColor" systemColor="opaqueSeparatorColor"/>
                                 <color key="shadowColor" systemColor="opaqueSeparatorColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HistoriX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1M4-Ks-Ues">
-                                <rect key="frame" x="101" y="331" width="213" height="117"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="117" id="O2j-jM-0s9"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HistoriX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1M4-Ks-Ues">
+                                <rect key="frame" x="81" y="275" width="213" height="117"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -36,12 +33,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="jSe-9n-qEL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="E2O-mh-zAf"/>
-                            <constraint firstItem="1M4-Ks-Ues" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Hob-6l-USw"/>
-                            <constraint firstItem="1M4-Ks-Ues" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="101" id="Obg-RC-A6d"/>
-                            <constraint firstItem="jSe-9n-qEL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="WyK-CS-Aef"/>
-                            <constraint firstItem="1M4-Ks-Ues" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="287" id="jkn-Td-woQ"/>
-                            <constraint firstItem="1M4-Ks-Ues" firstAttribute="centerX" secondItem="jSe-9n-qEL" secondAttribute="centerX" id="r4E-78-gtr"/>
+                            <constraint firstItem="1M4-Ks-Ues" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4xG-rd-Jva"/>
+                            <constraint firstItem="1M4-Ks-Ues" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="81" id="KMN-nh-7wk"/>
+                            <constraint firstItem="jSe-9n-qEL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="LhC-a8-6Ms"/>
+                            <constraint firstItem="1M4-Ks-Ues" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="275" id="dvv-Gm-J98"/>
+                            <constraint firstItem="1M4-Ks-Ues" firstAttribute="centerX" secondItem="jSe-9n-qEL" secondAttribute="centerX" id="isu-eF-Oys"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jSe-9n-qEL" secondAttribute="bottom" constant="20" id="lY5-kO-Rp9"/>
+                            <constraint firstItem="1M4-Ks-Ues" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="uAE-zu-6ta"/>
                         </constraints>
                     </view>
                 </viewController>
