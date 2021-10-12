@@ -10,6 +10,8 @@ import UIKit
 
 struct Constants {
     static let baseURL = "history.muffinlabs.com"
+    static let defaultUrl = "https://en.wikipedia.org/wiki/Main_Page"
+    
     struct Cell {
         static let cellId = "HistoryCell"
     }
@@ -35,6 +37,7 @@ struct Constants {
         
         enum Button {
             static let support = "SUPPORT ME!"
+            static let openWiki = "Open in Wikipedia"
         }
     }
        

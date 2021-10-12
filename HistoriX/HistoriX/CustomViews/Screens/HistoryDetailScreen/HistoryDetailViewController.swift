@@ -16,8 +16,7 @@ class HistoryDetailViewController: UIViewController {
     }
     
     private lazy var detailView = HistoryDetailView()
-    
-    
+    private lazy var wikiButton = HistoryButton()
     
     init(mainModel : MainModel) {
         self.viewModel = HistoryDetailViewModel(mainModel: mainModel)
@@ -42,7 +41,7 @@ class HistoryDetailViewController: UIViewController {
     
     private func getDetailInfo() {
         viewModel.getData {
-            print(self.viewModel.datas)
+           // print(self.viewModel.datas)
         } errorContent: { err in
             AlertManager.showAlert(message: err.rawValue, viewController: self)
         }
@@ -52,6 +51,7 @@ class HistoryDetailViewController: UIViewController {
     private func setUp() {
         view.backgroundColor = viewModel.viewBackground
         setUpDetailView()
+        setUpWikiButton()
     }
     
     
@@ -70,5 +70,34 @@ class HistoryDetailViewController: UIViewController {
         ])
     }
     
+    
+    private func setUpWikiButton() {
+        let buttonHeight : CGFloat = 60
+        view.addSubview(wikiButton)
+        
+        wikiButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            wikiButton.topAnchor.constraint(equalTo: detailView.bottomAnchor, constant: padding),
+            wikiButton.heightAnchor.constraint(equalToConstant: buttonHeight),
+            wikiButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+            wikiButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+        ])
+        
+        wikiButton.set(backgroundColor: viewModel.wikiButtonBackground, title: viewModel.wikiButtonTitle)
+        wikiButton.addTarget(self, action: #selector(wikiButtonPressed), for: .touchUpInside)
+    }
+    
+    
+    @objc private func wikiButtonPressed() {
+        guard let url = URL(string: viewModel.datas?.html ?? viewModel.defaultUrlSafari) else {
+            AlertManager.showAlert(message: HistoryError.urlError.rawValue, viewController: self)
+            return
+        }
+        
+
+        presentSafari(with: url)
+        
+    }
 
 }

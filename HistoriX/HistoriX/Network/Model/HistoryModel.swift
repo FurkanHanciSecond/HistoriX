@@ -30,7 +30,6 @@ struct DataClass: Codable {
 struct MainModel: Codable {
     let year, text, html, noYearHTML: String
     let links: [Link]
-
     enum CodingKeys: String, CodingKey {
         case year, text, html
         case noYearHTML = "no_year_html"
