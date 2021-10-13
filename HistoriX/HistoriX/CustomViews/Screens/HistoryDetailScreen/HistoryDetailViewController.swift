@@ -14,7 +14,7 @@ class HistoryDetailViewController: UIViewController {
             setUp()
         }
     }
-    
+
     private lazy var detailView = HistoryDetailView()
     private lazy var wikiButton = HistoryButton()
     
@@ -51,7 +51,6 @@ class HistoryDetailViewController: UIViewController {
     private func setUp() {
         view.backgroundColor = viewModel.viewBackground
         setUpDetailView()
-        setUpWikiButton()
     }
     
     
@@ -68,36 +67,6 @@ class HistoryDetailViewController: UIViewController {
             detailView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25),
             detailView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25),
         ])
-    }
-    
-    
-    private func setUpWikiButton() {
-        let buttonHeight : CGFloat = 60
-        view.addSubview(wikiButton)
-        
-        wikiButton.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            wikiButton.topAnchor.constraint(equalTo: detailView.bottomAnchor, constant: padding),
-            wikiButton.heightAnchor.constraint(equalToConstant: buttonHeight),
-            wikiButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
-            wikiButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
-        ])
-        
-        wikiButton.set(backgroundColor: viewModel.wikiButtonBackground, title: viewModel.wikiButtonTitle)
-        wikiButton.addTarget(self, action: #selector(wikiButtonPressed), for: .touchUpInside)
-    }
-    
-    
-    @objc private func wikiButtonPressed() {
-        guard let url = URL(string: viewModel.datas?.html ?? viewModel.defaultUrlSafari) else {
-            AlertManager.showAlert(message: HistoryError.urlError.rawValue, viewController: self)
-            return
-        }
-        
-
-        presentSafari(with: url)
-        
     }
 
 }

@@ -46,7 +46,36 @@
 		70E4F8B026E3F05500097325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70E4F8AF26E3F05500097325 /* Assets.xcassets */; };
 		70E4F8B326E3F05500097325 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E4F8B126E3F05500097325 /* LaunchScreen.storyboard */; };
 		70F286C127005A14004A6800 /* HistoryDetailLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F286C027005A14004A6800 /* HistoryDetailLabel.swift */; };
+		70FE9301271760860018952F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70FE92D527175E1E0018952F /* WidgetKit.framework */; };
+		70FE9302271760860018952F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70FE92D727175E1E0018952F /* SwiftUI.framework */; };
+		70FE9305271760860018952F /* HistoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FE9304271760860018952F /* HistoWidget.swift */; };
+		70FE9307271760870018952F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70FE9306271760870018952F /* Assets.xcassets */; };
+		70FE930B271760870018952F /* HistoWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 70FE9300271760860018952F /* HistoWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70FE9309271760870018952F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70E4F89826E3F05500097325 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70FE92FF271760860018952F;
+			remoteInfo = HistoWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		70FE92E527175E200018952F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				70FE930B271760870018952F /* HistoWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		700AD02D26FD003600DC0E2D /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
@@ -90,6 +119,12 @@
 		70E4F8B226E3F05500097325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70E4F8B426E3F05500097325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70F286C027005A14004A6800 /* HistoryDetailLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailLabel.swift; sourceTree = "<group>"; };
+		70FE92D527175E1E0018952F /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		70FE92D727175E1E0018952F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		70FE9300271760860018952F /* HistoWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HistoWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		70FE9304271760860018952F /* HistoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoWidget.swift; sourceTree = "<group>"; };
+		70FE9306271760870018952F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70FE9308271760870018952F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +132,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70FE92FD271760860018952F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70FE9302271760860018952F /* SwiftUI.framework in Frameworks */,
+				70FE9301271760860018952F /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +358,8 @@
 			isa = PBXGroup;
 			children = (
 				70E4F8A226E3F05500097325 /* HistoriX */,
+				70FE9303271760860018952F /* HistoWidget */,
+				70FE92D427175E1E0018952F /* Frameworks */,
 				70E4F8A126E3F05500097325 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -322,6 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				70E4F8A026E3F05500097325 /* HistoriX.app */,
+				70FE9300271760860018952F /* HistoWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -342,6 +389,25 @@
 			path = HistoriX;
 			sourceTree = "<group>";
 		};
+		70FE92D427175E1E0018952F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70FE92D527175E1E0018952F /* WidgetKit.framework */,
+				70FE92D727175E1E0018952F /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70FE9303271760860018952F /* HistoWidget */ = {
+			isa = PBXGroup;
+			children = (
+				70FE9304271760860018952F /* HistoWidget.swift */,
+				70FE9306271760870018952F /* Assets.xcassets */,
+				70FE9308271760870018952F /* Info.plist */,
+			);
+			path = HistoWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -352,15 +418,34 @@
 				70E4F89C26E3F05500097325 /* Sources */,
 				70E4F89D26E3F05500097325 /* Frameworks */,
 				70E4F89E26E3F05500097325 /* Resources */,
+				70FE92E527175E200018952F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				70FE930A271760870018952F /* PBXTargetDependency */,
 			);
 			name = HistoriX;
 			productName = HistoriX;
 			productReference = 70E4F8A026E3F05500097325 /* HistoriX.app */;
 			productType = "com.apple.product-type.application";
+		};
+		70FE92FF271760860018952F /* HistoWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70FE930E271760870018952F /* Build configuration list for PBXNativeTarget "HistoWidgetExtension" */;
+			buildPhases = (
+				70FE92FC271760860018952F /* Sources */,
+				70FE92FD271760860018952F /* Frameworks */,
+				70FE92FE271760860018952F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HistoWidgetExtension;
+			productName = HistoWidgetExtension;
+			productReference = 70FE9300271760860018952F /* HistoWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -372,6 +457,9 @@
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					70E4F89F26E3F05500097325 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					70FE92FF271760860018952F = {
 						CreatedOnToolsVersion = 12.5;
 					};
 				};
@@ -390,6 +478,7 @@
 			projectRoot = "";
 			targets = (
 				70E4F89F26E3F05500097325 /* HistoriX */,
+				70FE92FF271760860018952F /* HistoWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -401,6 +490,14 @@
 			files = (
 				70E4F8B326E3F05500097325 /* LaunchScreen.storyboard in Resources */,
 				70E4F8B026E3F05500097325 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70FE92FE271760860018952F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70FE9307271760870018952F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,7 +548,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		70FE92FC271760860018952F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70FE9305271760860018952F /* HistoWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70FE930A271760870018952F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70FE92FF271760860018952F /* HistoWidgetExtension */;
+			targetProxy = 70FE9309271760870018952F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		70E4F8B126E3F05500097325 /* LaunchScreen.storyboard */ = {
@@ -584,6 +697,7 @@
 		70E4F8B826E3F05500097325 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -604,6 +718,7 @@
 		70E4F8B926E3F05500097325 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -616,6 +731,48 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.furkanhanci.HistoriX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		70FE930C271760870018952F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C7UJQJ2BAR;
+				INFOPLIST_FILE = HistoWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.furkanhanci.HistoriX.HistoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70FE930D271760870018952F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C7UJQJ2BAR;
+				INFOPLIST_FILE = HistoWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.furkanhanci.HistoriX.HistoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -638,6 +795,15 @@
 			buildConfigurations = (
 				70E4F8B826E3F05500097325 /* Debug */,
 				70E4F8B926E3F05500097325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70FE930E271760870018952F /* Build configuration list for PBXNativeTarget "HistoWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70FE930C271760870018952F /* Debug */,
+				70FE930D271760870018952F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
