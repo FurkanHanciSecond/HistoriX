@@ -25,6 +25,7 @@
 		7087ED4826FF101A00027DF8 /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7087ED4726FF101900027DF8 /* LoadViewController.swift */; };
 		7087ED4A26FF2F7800027DF8 /* SupportButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7087ED4926FF2F7800027DF8 /* SupportButton.swift */; };
 		708A295E26F3AA76003AACC2 /* HistoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708A295D26F3AA76003AACC2 /* HistoryButton.swift */; };
+		70AEFE982717D9430015A52A /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AEFE972717D9430015A52A /* FavoritesViewController.swift */; };
 		70B36BEF26E9362300BD55E3 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B36BEE26E9362300BD55E3 /* UITableView+Ext.swift */; };
 		70B36BF226E936C200BD55E3 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B36BF126E936C200BD55E3 /* HistoryModel.swift */; };
 		70B36BF526E9370000BD55E3 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B36BF426E9370000BD55E3 /* HTTPMethod.swift */; };
@@ -96,6 +97,7 @@
 		7087ED4726FF101900027DF8 /* LoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewController.swift; sourceTree = "<group>"; };
 		7087ED4926FF2F7800027DF8 /* SupportButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportButton.swift; sourceTree = "<group>"; };
 		708A295D26F3AA76003AACC2 /* HistoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryButton.swift; sourceTree = "<group>"; };
+		70AEFE972717D9430015A52A /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		70B36BEE26E9362300BD55E3 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		70B36BF126E936C200BD55E3 /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
 		70B36BF426E9370000BD55E3 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -228,6 +230,14 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
+		70AEFE962717D91E0015A52A /* FavoritesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				70AEFE972717D9430015A52A /* FavoritesViewController.swift */,
+			);
+			path = FavoritesScreen;
+			sourceTree = "<group>";
+		};
 		70B36BED26E9346500BD55E3 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +356,7 @@
 		70D0BC7A26E3F1C200897726 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				70AEFE962717D91E0015A52A /* FavoritesScreen */,
 				701641D526FF96A1004BA7E7 /* HistoryDetailScreen */,
 				70525A4426F9D4C40096F803 /* TabBar */,
 				70525A4526F9D4D20096F803 /* SupportMeScreen */,
@@ -518,6 +529,7 @@
 				70B36BFA26E9376B00BD55E3 /* HistoryError.swift in Sources */,
 				7087ED4A26FF2F7800027DF8 /* SupportButton.swift in Sources */,
 				702285FE26EC7885000DC23D /* HistoryListModel.swift in Sources */,
+				70AEFE982717D9430015A52A /* FavoritesViewController.swift in Sources */,
 				70D0BC7826E3F14000897726 /* UIColor+Ext.swift in Sources */,
 				700AD02E26FD003600DC0E2D /* Date+Ext.swift in Sources */,
 				70B36C0126E9389400BD55E3 /* HTTPHeader.swift in Sources */,

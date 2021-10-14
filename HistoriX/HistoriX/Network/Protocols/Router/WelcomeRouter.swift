@@ -24,7 +24,7 @@ enum MainModelRouter : RouterProtocol {
     var path: String {
         switch self {
         case .getDatFromWelcome:
-            return "/date/\(DateService.shared.getCurrentMonth())/\(DateService.shared.getCurrentDay())"
+            return "/date/\(DateService.shared.getCurrentMonth())/20"
         }
     }
     

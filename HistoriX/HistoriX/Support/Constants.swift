@@ -28,6 +28,7 @@ struct Constants {
         enum Bar {
           static let events = "What Happened"
             static let support = "Support"
+            static let favorites = "Favorites"
         }
         
         enum Error {
@@ -37,7 +38,7 @@ struct Constants {
         
         enum Button {
             static let support = "SUPPORT ME!"
-            static let openWiki = "Open in Wikipedia"
+            static let addFavorites = "Add To Favorites"
         }
     }
        
@@ -58,6 +59,7 @@ struct Constants {
             static let arrowRight =  UIImage(systemName: "arrow.right")
            static let events = UIImage(systemName: "list.bullet")
             static let support = UIImage(systemName: "hand.thumbsup.fill")
+            static let favorites = UIImage(systemName: "heart.fill")
         }
     }
 }

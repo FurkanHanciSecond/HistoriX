@@ -14,9 +14,8 @@ class HistoryDetailViewController: UIViewController {
             setUp()
         }
     }
-
     private lazy var detailView = HistoryDetailView()
-    private lazy var wikiButton = HistoryButton()
+    private lazy var favoritesButton = HistoryButton()
     
     init(mainModel : MainModel) {
         self.viewModel = HistoryDetailViewModel(mainModel: mainModel)
@@ -51,6 +50,7 @@ class HistoryDetailViewController: UIViewController {
     private func setUp() {
         view.backgroundColor = viewModel.viewBackground
         setUpDetailView()
+        setupFavoriteButton()
     }
     
     
@@ -68,5 +68,25 @@ class HistoryDetailViewController: UIViewController {
             detailView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25),
         ])
     }
+    
+
+    private func setupFavoriteButton() {
+       let buttonHeight: CGFloat = 50
+       view.addSubview(favoritesButton)
+
+       NSLayoutConstraint.activate([
+        favoritesButton.topAnchor.constraint(equalTo: detailView.bottomAnchor, constant: padding),
+        favoritesButton.heightAnchor.constraint(equalToConstant: buttonHeight),
+        favoritesButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+        favoritesButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+       ])
+
+        favoritesButton.set(backgroundColor: viewModel.favoriteButtonBackground, title: viewModel.favoriteButtonTitle)
+     }
+    
+    @objc private func addFavorites() {
+        //MARK: TODO
+    }
+
 
 }

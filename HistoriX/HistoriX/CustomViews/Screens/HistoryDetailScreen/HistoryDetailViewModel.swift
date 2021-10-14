@@ -12,8 +12,8 @@ protocol HistoryDetailViewModelProtocol {
     var datas: MainModel? { get set }
     var welcome : Welcome? { get }
     var defaultUrlSafari : String { get  }
-    var wikiButtonTitle : String { get }
-    var wikiButtonBackground : UIColor { get }
+    var favoriteButtonTitle : String { get }
+    var favoriteButtonBackground : UIColor { get }
     func getData(content: @escaping () -> Void, errorContent: @escaping (HistoryError) -> Void)
 }
 
@@ -42,8 +42,8 @@ final class HistoryDetailViewModel : HistoryDetailViewModelProtocol {
   
     let viewBackground = Constants.Style.Color.systembackground
     let defaultUrlSafari = Constants.baseURL
-    let wikiButtonTitle = Constants.Text.Button.openWiki
-    let wikiButtonBackground = Constants.Style.Color.tabbBar
+    let favoriteButtonTitle = Constants.Text.Button.addFavorites
+    let favoriteButtonBackground = Constants.Style.Color.tabbBar
     
 }
 
