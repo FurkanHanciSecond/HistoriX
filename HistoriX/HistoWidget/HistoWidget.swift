@@ -42,7 +42,10 @@ struct HistoWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        Text(entry.date, style: .time)
+        VStack {
+            Text(entry.date, style: .time)
+         Text("Some Of Events Today")
+        }
     }
 }
 
@@ -62,6 +65,6 @@ struct HistoWidget: Widget {
 struct HistoWidget_Previews: PreviewProvider {
     static var previews: some View {
         HistoWidgetEntryView(entry: SimpleEntry(date: Date()))
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
+            .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }

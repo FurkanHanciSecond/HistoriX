@@ -25,7 +25,7 @@ class HistoryTabBarController: UITabBarController {
         viewControllers = [
             historyListVC(),
             supportMeVC(),
-            favoritesVC()
+            favoritesListVC()
         ]
     }
     
@@ -44,12 +44,12 @@ class HistoryTabBarController: UITabBarController {
         return UINavigationController(rootViewController: supportMeViewController)
     }
     
-    private func favoritesVC() -> UINavigationController {
-        let favoritesViewController = FavoritesViewController()
-        let tabBarItem = UITabBarItem(title: Constants.Text
-                                        .Bar.favorites, image: Constants.Style.Image.favorites, tag: 2)
-        favoritesViewController.tabBarItem = tabBarItem
-        return UINavigationController(rootViewController: favoritesViewController)
+    private func favoritesListVC() -> UINavigationController {
+        let favoritesListviewController = FavoritesListVC()
+        let tabBarItem = UITabBarItem(title: Constants.Text.Bar.favorites, image: Constants.Style.Image.favorites, tag: 2)
+        favoritesListviewController.tabBarItem = tabBarItem
+        return UINavigationController(rootViewController: favoritesListviewController) 
     }
+
 
 }

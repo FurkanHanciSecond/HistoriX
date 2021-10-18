@@ -6,9 +6,13 @@
 //
 
 import UIKit
-
+import CoreData
 class HistoryDetailViewController: UIViewController {
     private let padding : CGFloat = 100
+    private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    private var events : [Events]?
+    private let pulse = CASpringAnimation(keyPath: "transform.scale")
+
     public var viewModel : HistoryDetailViewModel {
         didSet {
             setUp()
@@ -82,10 +86,28 @@ class HistoryDetailViewController: UIViewController {
        ])
 
         favoritesButton.set(backgroundColor: viewModel.favoriteButtonBackground, title: viewModel.favoriteButtonTitle)
+        favoritesButton.addTarget(self, action: #selector(addFavorites), for: .touchUpInside)
      }
     
     @objc private func addFavorites() {
-        //MARK: TODO
+        pulse.duration = 0.5
+        pulse.fromValue = 1.0
+        pulse.toValue = 1.12
+        pulse.autoreverses = true
+        pulse.repeatCount = .nan
+        pulse.initialVelocity = 0.5
+        pulse.damping = 1.3
+        favoritesButton.layer.add(pulse , forKey: nil)
+       let newEvent = Events(context: self.context)
+        newEvent.event = viewModel.datas?.text
+        newEvent.year = viewModel.datas?.year
+        do {
+            try self.context.save()
+            AlertManager.showAlert(title: "Yay 🎉", message: "The Event Saved To Favorites", alertAction: nil, viewController: self)
+        } catch  {
+            AlertManager.showAlert(message: HistoryError.coreDataErr.rawValue, viewController: self)
+        }
+        
     }
 
 

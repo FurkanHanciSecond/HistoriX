@@ -11,7 +11,13 @@ class SupportMeViewController: UIViewController {
     private lazy var supportButton = SupportButton()
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureUI()
+    }
+    
+    
+    private func configureUI() {
         configureButton()
+        self.title = Constants.Text.Bar.support
     }
     
     

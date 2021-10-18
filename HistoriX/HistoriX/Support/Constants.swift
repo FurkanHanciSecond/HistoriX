@@ -14,6 +14,7 @@ struct Constants {
     
     struct Cell {
         static let cellId = "HistoryCell"
+        static let favoritesCell = "FavoritesCell"
     }
     
     struct Notification {
@@ -27,7 +28,7 @@ struct Constants {
         
         enum Bar {
           static let events = "What Happened"
-            static let support = "Support"
+            static let support = "SupportMe"
             static let favorites = "Favorites"
         }
         
