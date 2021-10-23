@@ -9,12 +9,19 @@ import UIKit
 
 class FavoritesListVC: UIViewController {
 
+ 
+    public var viewModel = FavoritesListViewModel() {
+        didSet {
+         configure()
+        }
+    }
     private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     private var events : [Events]?
     private lazy var FavoritesTableView : UITableView = {
        let table = UITableView()
         return table
     }()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +38,8 @@ class FavoritesListVC: UIViewController {
         self.FavoritesTableView.rowHeight = 200
         self.FavoritesTableView.separatorStyle = .none
         self.FavoritesTableView.configConstraints(to: view)
-        self.title = Constants.Text.Bar.favorites
-        self.view.backgroundColor = Constants.Style.Color.systembackground
+        self.title = viewModel.title
+        self.view.backgroundColor = viewModel.viewBackground
         self.FavoritesTableView.configConstraints(to: view)
         fetchEvents()
     }
@@ -48,7 +55,7 @@ class FavoritesListVC: UIViewController {
     }
     
     
-    @objc private func refresh(_ sender : Any) {
+    @objc private func refresh(_ sender : UIRefreshControl) {
         self.FavoritesTableView.refreshControl?.beginRefreshing()
         self.FavoritesTableView.refreshControl?.endRefreshing()
         self.FavoritesTableView.reloadData()
@@ -82,12 +89,27 @@ extension FavoritesListVC : UITableViewDataSource {
         
         cell.set(data: event)
         
-       // cell.textLabel?.text = event.event
         return cell
       }
 }
 
 extension FavoritesListVC : UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let action = UIContextualAction(style: .destructive, title: "Delete") { action, view, handler in
+            let eventRemove = self.events![indexPath.row]
+            self.context.delete(eventRemove)
+            
+            do {
+                 try self.context.save()
+            } catch {
+                AlertManager.showAlert(title: Constants.Text.Error.oops, message: HistoryError.coreDataDeleteErr.rawValue, alertAction: nil, viewController: self)
+                
+            }
+            
+            self.fetchEvents()
+        }
+        
+        return UISwipeActionsConfiguration(actions: [action])
+    }
 }
 

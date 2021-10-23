@@ -11,7 +11,7 @@ class FavoritesTableViewCell: UITableViewCell {
 
     private lazy var containerView: UIView = {
       let view = UIView()
-        view.backgroundColor = Constants.Style.Color.black
+        view.backgroundColor = Constants.Style.Color.lightGray
       view.addBorder()
       view.translatesAutoresizingMaskIntoConstraints = false
         return view

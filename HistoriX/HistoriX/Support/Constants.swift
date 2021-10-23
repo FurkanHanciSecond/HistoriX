@@ -40,6 +40,7 @@ struct Constants {
         enum Button {
             static let support = "SUPPORT ME!"
             static let addFavorites = "Add To Favorites"
+            static let sendMail = "Send Mail"
         }
     }
        

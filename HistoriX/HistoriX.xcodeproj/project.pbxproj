@@ -49,6 +49,8 @@
 		70E4F8AE26E3F05500097325 /* HistoriX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70E4F8AC26E3F05500097325 /* HistoriX.xcdatamodeld */; };
 		70E4F8B026E3F05500097325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70E4F8AF26E3F05500097325 /* Assets.xcassets */; };
 		70E4F8B326E3F05500097325 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E4F8B126E3F05500097325 /* LaunchScreen.storyboard */; };
+		70EC2915271F43AF00767E1F /* FavoritesListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EC2914271F43AF00767E1F /* FavoritesListModel.swift */; };
+		70EC2917271F43B900767E1F /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EC2916271F43B900767E1F /* FavoritesViewModel.swift */; };
 		70F286C127005A14004A6800 /* HistoryDetailLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F286C027005A14004A6800 /* HistoryDetailLabel.swift */; };
 		70FE9301271760860018952F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70FE92D527175E1E0018952F /* WidgetKit.framework */; };
 		70FE9302271760860018952F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70FE92D727175E1E0018952F /* SwiftUI.framework */; };
@@ -126,6 +128,8 @@
 		70E4F8AF26E3F05500097325 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70E4F8B226E3F05500097325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70E4F8B426E3F05500097325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70EC2914271F43AF00767E1F /* FavoritesListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListModel.swift; sourceTree = "<group>"; };
+		70EC2916271F43B900767E1F /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 		70F286C027005A14004A6800 /* HistoryDetailLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailLabel.swift; sourceTree = "<group>"; };
 		70FE92D527175E1E0018952F /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		70FE92D727175E1E0018952F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -169,6 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				701A91E4271C80AA00289CD9 /* FavoritesListVC.swift */,
+				70EC2914271F43AF00767E1F /* FavoritesListModel.swift */,
+				70EC2916271F43B900767E1F /* FavoritesViewModel.swift */,
 			);
 			path = FavoritesScreen;
 			sourceTree = "<group>";
@@ -185,7 +191,7 @@
 		702858B026E4952C00C94FDC /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				7023C36F271C9419005A0C03 /* CoreData */,
+				70EC2918271F51BA00767E1F /* Helpers */,
 				70B36C0926E93C1900BD55E3 /* Date */,
 				702858B126E4953700C94FDC /* Constants.swift */,
 				703FD57D26E49CFD0077C764 /* AlertService.swift */,
@@ -417,6 +423,14 @@
 			path = HistoriX;
 			sourceTree = "<group>";
 		};
+		70EC2918271F51BA00767E1F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7023C36F271C9419005A0C03 /* CoreData */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		70FE92D427175E1E0018952F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -539,6 +553,7 @@
 				70B36C0626E939E400BD55E3 /* ServiceClientProtocol.swift in Sources */,
 				708A295E26F3AA76003AACC2 /* HistoryButton.swift in Sources */,
 				7065DDD126F7B7F10030A0CE /* HistoryTableViewCell.swift in Sources */,
+				70EC2917271F43B900767E1F /* FavoritesViewModel.swift in Sources */,
 				70B36C0826E93B3C00BD55E3 /* NetworkLog.swift in Sources */,
 				70E4F8A426E3F05500097325 /* AppDelegate.swift in Sources */,
 				7065DDD526F7BB450030A0CE /* HistoryLabel.swift in Sources */,
@@ -575,6 +590,7 @@
 				701641DB26FF96FE004BA7E7 /* HistoryDetailModel.swift in Sources */,
 				70B36BFF26E9383800BD55E3 /* RouterProtocol.swift in Sources */,
 				703FD57E26E49CFD0077C764 /* AlertService.swift in Sources */,
+				70EC2915271F43AF00767E1F /* FavoritesListModel.swift in Sources */,
 				702858B226E4953700C94FDC /* Constants.swift in Sources */,
 				70B36C0B26E93C7600BD55E3 /* DateService.swift in Sources */,
 			);

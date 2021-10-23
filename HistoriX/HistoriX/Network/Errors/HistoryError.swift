@@ -14,4 +14,5 @@ enum HistoryError : String , Error {
     case dataError = "Data error"
     case urlError = "Invalid URL"
     case coreDataErr = "Saving Error"
+    case coreDataDeleteErr = "Delete Error"
 }
