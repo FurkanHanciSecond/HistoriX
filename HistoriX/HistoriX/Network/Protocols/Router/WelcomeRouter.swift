@@ -14,7 +14,7 @@ enum MainModelRouter : RouterProtocol {
     case getDatFromWelcome
     
     var scheme: String {
-        return "https"
+        return "http"
     }
     
     var host: String {
