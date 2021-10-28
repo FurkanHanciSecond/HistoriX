@@ -43,10 +43,10 @@ class SupportMeViewController: UIViewController {
         ])
         
         supportButton.set(backgroundColor: Constants.Style.Color.tabbBar, title: Constants.Text.Button.support)
-        supportButton.addTarget(self, action: #selector(showMailComposer), for: .touchUpInside)
+        supportButton.addTarget(self, action: #selector(requestForReview), for: .touchUpInside)
         
         sendMailButton.set(backgroundColor: Constants.Style.Color.lightGray, title: Constants.Text.Button.sendMail)
-        sendMailButton.addTarget(self, action: #selector(requestForReview), for: .touchUpInside)
+        sendMailButton.addTarget(self, action: #selector(showMailComposer), for: .touchUpInside)
     }
     
     @objc private func requestForReview() {
@@ -55,7 +55,10 @@ class SupportMeViewController: UIViewController {
             return
         }
         
-        SKStoreReviewController.requestReview(in: scene)
+        if #available(iOS 14, *) {
+            SKStoreReviewController.requestReview(in: scene)
+
+        }
     }
     
     @objc private func showMailComposer() {

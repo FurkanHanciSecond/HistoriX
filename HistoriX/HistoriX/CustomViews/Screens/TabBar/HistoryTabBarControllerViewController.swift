@@ -16,7 +16,6 @@ class HistoryTabBarController: UITabBarController {
     }
     
     private func configTabBar() {
-        tabBar.barTintColor = Constants.Style.Color.black
         tabBar.tintColor = Constants.Style.Color.tabbBar
         
     }
