@@ -1,12 +1,11 @@
 //
-//  HistoWidgetModel.swift
+//  Model.swift
 //  HistoWidgetExtension
 //
-//  Created by Furkan Hanci on 10/28/21.
+//  Created by Furkan Hanci on 10/29/21.
 //
 
 import Foundation
-
 
 // MARK: - Welcome
 struct Welcome: Codable {
@@ -42,3 +41,5 @@ struct Link: Codable {
     let title: String
     let link: String
 }
+
+

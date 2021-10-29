@@ -22,22 +22,13 @@
 		703FD57E26E49CFD0077C764 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703FD57D26E49CFD0077C764 /* AlertService.swift */; };
 		70525A4326F9D3E50096F803 /* HistoryTabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70525A4226F9D3E50096F803 /* HistoryTabBarControllerViewController.swift */; };
 		70525A4726F9D4FB0096F803 /* SupportMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70525A4626F9D4FB0096F803 /* SupportMeViewController.swift */; };
-		7052B407272B39CC000138A0 /* HistoWidgetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7052B406272B39CC000138A0 /* HistoWidgetModel.swift */; };
-		7052B40A272B3A7E000138A0 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7052B409272B3A7E000138A0 /* HTTPMethod.swift */; };
-		7052B40C272B3AB7000138A0 /* HTTPStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7052B40B272B3AB7000138A0 /* HTTPStatus.swift */; };
-		7052B40E272B3AF7000138A0 /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7052B40D272B3AF7000138A0 /* HTTPHeader.swift */; };
-		7052B413272B3B2D000138A0 /* HistoWidgetError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7052B412272B3B2D000138A0 /* HistoWidgetError.swift */; };
-		7052B416272B3B60000138A0 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7052B415272B3B60000138A0 /* RouterProtocol.swift */; };
-		7052B418272B3B8B000138A0 /* WidgetRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7052B417272B3B8B000138A0 /* WidgetRouter.swift */; };
-		7052B41A272B3BAD000138A0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7052B419272B3BAD000138A0 /* Constants.swift */; };
 		7052B41D272B3BEB000138A0 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7052B41C272B3BEB000138A0 /* DateHelper.swift */; };
-		7052B41F272B3C15000138A0 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7052B41E272B3C15000138A0 /* ParameterEncoding.swift */; };
-		7052B423272B3C7E000138A0 /* WidgetServiceClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7052B422272B3C7E000138A0 /* WidgetServiceClientProtocol.swift */; };
-		7052B426272B3CC6000138A0 /* WidgetServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7052B425272B3CC6000138A0 /* WidgetServiceClient.swift */; };
+		7060EA13272BC10000F9A212 /* HistoWidgetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7060EA12272BC10000F9A212 /* HistoWidgetModel.swift */; };
 		7065DDD126F7B7F10030A0CE /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065DDD026F7B7F10030A0CE /* HistoryTableViewCell.swift */; };
 		7065DDD526F7BB450030A0CE /* HistoryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7065DDD426F7BB450030A0CE /* HistoryLabel.swift */; };
 		706F14B9271D1E0600DDE574 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F14B8271D1E0600DDE574 /* FavoritesTableViewCell.swift */; };
 		7080A82C27044DDD0075F2F1 /* HistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080A82B27044DDD0075F2F1 /* HistoryDetailView.swift */; };
+		708654C7272BE3A800CECBA8 /* MainWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708654C6272BE3A800CECBA8 /* MainWidget.swift */; };
 		7087ED4826FF101A00027DF8 /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7087ED4726FF101900027DF8 /* LoadViewController.swift */; };
 		7087ED4A26FF2F7800027DF8 /* SupportButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7087ED4926FF2F7800027DF8 /* SupportButton.swift */; };
 		708A295E26F3AA76003AACC2 /* HistoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708A295D26F3AA76003AACC2 /* HistoryButton.swift */; };
@@ -111,22 +102,13 @@
 		703FD57D26E49CFD0077C764 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		70525A4226F9D3E50096F803 /* HistoryTabBarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTabBarControllerViewController.swift; sourceTree = "<group>"; };
 		70525A4626F9D4FB0096F803 /* SupportMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportMeViewController.swift; sourceTree = "<group>"; };
-		7052B406272B39CC000138A0 /* HistoWidgetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoWidgetModel.swift; sourceTree = "<group>"; };
-		7052B409272B3A7E000138A0 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		7052B40B272B3AB7000138A0 /* HTTPStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatus.swift; sourceTree = "<group>"; };
-		7052B40D272B3AF7000138A0 /* HTTPHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
-		7052B412272B3B2D000138A0 /* HistoWidgetError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoWidgetError.swift; sourceTree = "<group>"; };
-		7052B415272B3B60000138A0 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
-		7052B417272B3B8B000138A0 /* WidgetRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetRouter.swift; sourceTree = "<group>"; };
-		7052B419272B3BAD000138A0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7052B41C272B3BEB000138A0 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
-		7052B41E272B3C15000138A0 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
-		7052B422272B3C7E000138A0 /* WidgetServiceClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetServiceClientProtocol.swift; sourceTree = "<group>"; };
-		7052B425272B3CC6000138A0 /* WidgetServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetServiceClient.swift; sourceTree = "<group>"; };
+		7060EA12272BC10000F9A212 /* HistoWidgetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoWidgetModel.swift; sourceTree = "<group>"; };
 		7065DDD026F7B7F10030A0CE /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		7065DDD426F7BB450030A0CE /* HistoryLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryLabel.swift; sourceTree = "<group>"; };
 		706F14B8271D1E0600DDE574 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
 		7080A82B27044DDD0075F2F1 /* HistoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailView.swift; sourceTree = "<group>"; };
+		708654C6272BE3A800CECBA8 /* MainWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWidget.swift; sourceTree = "<group>"; };
 		7087ED4726FF101900027DF8 /* LoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewController.swift; sourceTree = "<group>"; };
 		7087ED4926FF2F7800027DF8 /* SupportButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportButton.swift; sourceTree = "<group>"; };
 		708A295D26F3AA76003AACC2 /* HistoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryButton.swift; sourceTree = "<group>"; };
@@ -249,54 +231,6 @@
 			path = SupportMeScreen;
 			sourceTree = "<group>";
 		};
-		7052B402272B398C000138A0 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				7052B424272B3CAB000138A0 /* Service */,
-				7052B420272B3C53000138A0 /* Protocols */,
-				7052B411272B3B1A000138A0 /* Errors */,
-				7052B408272B3A70000138A0 /* HTTP */,
-				7052B403272B399B000138A0 /* Model */,
-				7052B41E272B3C15000138A0 /* ParameterEncoding.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		7052B403272B399B000138A0 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				7052B406272B39CC000138A0 /* HistoWidgetModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		7052B408272B3A70000138A0 /* HTTP */ = {
-			isa = PBXGroup;
-			children = (
-				7052B409272B3A7E000138A0 /* HTTPMethod.swift */,
-				7052B40B272B3AB7000138A0 /* HTTPStatus.swift */,
-				7052B40D272B3AF7000138A0 /* HTTPHeader.swift */,
-			);
-			path = HTTP;
-			sourceTree = "<group>";
-		};
-		7052B411272B3B1A000138A0 /* Errors */ = {
-			isa = PBXGroup;
-			children = (
-				7052B412272B3B2D000138A0 /* HistoWidgetError.swift */,
-			);
-			path = Errors;
-			sourceTree = "<group>";
-		};
-		7052B414272B3B54000138A0 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				7052B415272B3B60000138A0 /* RouterProtocol.swift */,
-				7052B417272B3B8B000138A0 /* WidgetRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
 		7052B41B272B3BDC000138A0 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,29 +239,12 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		7052B420272B3C53000138A0 /* Protocols */ = {
+		7060EA0F272BC0B800F9A212 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7052B421272B3C6B000138A0 /* Client */,
-				7052B414272B3B54000138A0 /* Router */,
+				7060EA12272BC10000F9A212 /* HistoWidgetModel.swift */,
 			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		7052B421272B3C6B000138A0 /* Client */ = {
-			isa = PBXGroup;
-			children = (
-				7052B422272B3C7E000138A0 /* WidgetServiceClientProtocol.swift */,
-			);
-			path = Client;
-			sourceTree = "<group>";
-		};
-		7052B424272B3CAB000138A0 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				7052B425272B3CC6000138A0 /* WidgetServiceClient.swift */,
-			);
-			path = Service;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		7065DDD226F7BABB0030A0CE /* Cell */ = {
@@ -548,12 +465,12 @@
 		70FE9303271760860018952F /* HistoWidget */ = {
 			isa = PBXGroup;
 			children = (
+				7060EA0F272BC0B800F9A212 /* Model */,
 				7052B41B272B3BDC000138A0 /* Helpers */,
-				7052B402272B398C000138A0 /* Network */,
 				70FE9304271760860018952F /* HistoWidget.swift */,
 				70FE9306271760870018952F /* Assets.xcassets */,
 				70FE9308271760870018952F /* Info.plist */,
-				7052B419272B3BAD000138A0 /* Constants.swift */,
+				708654C6272BE3A800CECBA8 /* MainWidget.swift */,
 			);
 			path = HistoWidget;
 			sourceTree = "<group>";
@@ -708,19 +625,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7052B413272B3B2D000138A0 /* HistoWidgetError.swift in Sources */,
-				7052B416272B3B60000138A0 /* RouterProtocol.swift in Sources */,
-				7052B418272B3B8B000138A0 /* WidgetRouter.swift in Sources */,
+				708654C7272BE3A800CECBA8 /* MainWidget.swift in Sources */,
 				70FE9305271760860018952F /* HistoWidget.swift in Sources */,
-				7052B407272B39CC000138A0 /* HistoWidgetModel.swift in Sources */,
-				7052B41F272B3C15000138A0 /* ParameterEncoding.swift in Sources */,
-				7052B423272B3C7E000138A0 /* WidgetServiceClientProtocol.swift in Sources */,
+				7060EA13272BC10000F9A212 /* HistoWidgetModel.swift in Sources */,
 				7052B41D272B3BEB000138A0 /* DateHelper.swift in Sources */,
-				7052B40E272B3AF7000138A0 /* HTTPHeader.swift in Sources */,
-				7052B40A272B3A7E000138A0 /* HTTPMethod.swift in Sources */,
-				7052B40C272B3AB7000138A0 /* HTTPStatus.swift in Sources */,
-				7052B426272B3CC6000138A0 /* WidgetServiceClient.swift in Sources */,
-				7052B41A272B3BAD000138A0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
