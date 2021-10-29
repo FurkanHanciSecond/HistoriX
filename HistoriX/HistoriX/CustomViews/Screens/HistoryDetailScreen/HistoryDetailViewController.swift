@@ -12,7 +12,7 @@ class HistoryDetailViewController: UIViewController {
     private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     private var events : [Events]?
     private let pulse = CASpringAnimation(keyPath: "transform.scale")
-
+    
     public var viewModel : HistoryDetailViewModel {
         didSet {
             setUp()
@@ -44,11 +44,11 @@ class HistoryDetailViewController: UIViewController {
     
     private func getDetailInfo() {
         viewModel.getData {
-           // print(self.viewModel.datas)
+            // print(self.viewModel.datas)
         } errorContent: { err in
             AlertManager.showAlert(message: err.rawValue, viewController: self)
         }
-
+        
     }
     
     private func setUp() {
@@ -59,7 +59,7 @@ class HistoryDetailViewController: UIViewController {
     
     
     private func setUpDetailView() {
-        let viewHeight : CGFloat = 250
+        let viewHeight : CGFloat = 270
         detailView.shadow()
         view.addSubview(detailView)
         
@@ -71,23 +71,40 @@ class HistoryDetailViewController: UIViewController {
             detailView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25),
             detailView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25),
         ])
+        
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(shareEvent))
+        gestureRecognizer.numberOfTapsRequired = 2
+        view.addGestureRecognizer(gestureRecognizer)
+        
     }
     
-
+    @objc func shareEvent() {
+        let appURl = NSURL(string:"https://github.com/Furkanus/HistoriX-1")
+        let text = "Hey! I like \(viewModel.datas!.text + " ")this event today in history, check this out! "
+        let textToShare = [text , appURl ?? ""] as [Any]
+        let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+        activityViewController.excludedActivityTypes = [ UIActivity.ActivityType.airDrop, UIActivity.ActivityType.postToFacebook ]
+        
+        self.present(activityViewController, animated: true, completion: nil)
+        
+    }
+    
+    
     private func setupFavoriteButton() {
-       let buttonHeight: CGFloat = 50
-       view.addSubview(favoritesButton)
-
-       NSLayoutConstraint.activate([
-        favoritesButton.topAnchor.constraint(equalTo: detailView.bottomAnchor, constant: padding),
-        favoritesButton.heightAnchor.constraint(equalToConstant: buttonHeight),
-        favoritesButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
-        favoritesButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
-       ])
-
+        let buttonHeight: CGFloat = 50
+        view.addSubview(favoritesButton)
+        
+        NSLayoutConstraint.activate([
+            favoritesButton.topAnchor.constraint(equalTo: detailView.bottomAnchor, constant: padding),
+            favoritesButton.heightAnchor.constraint(equalToConstant: buttonHeight),
+            favoritesButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+            favoritesButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+        ])
+        
         favoritesButton.set(backgroundColor: viewModel.favoriteButtonBackground, title: viewModel.favoriteButtonTitle)
         favoritesButton.addTarget(self, action: #selector(addFavorites), for: .touchUpInside)
-     }
+    }
     
     @objc private func addFavorites() {
         pulse.duration = 0.5
@@ -98,7 +115,7 @@ class HistoryDetailViewController: UIViewController {
         pulse.initialVelocity = 0.5
         pulse.damping = 1.3
         favoritesButton.layer.add(pulse , forKey: nil)
-       let newEvent = Events(context: self.context)
+        let newEvent = Events(context: self.context)
         newEvent.event = viewModel.datas?.text
         newEvent.year = viewModel.datas?.year
         do {
@@ -109,6 +126,6 @@ class HistoryDetailViewController: UIViewController {
         }
         
     }
-
-
+    
+    
 }

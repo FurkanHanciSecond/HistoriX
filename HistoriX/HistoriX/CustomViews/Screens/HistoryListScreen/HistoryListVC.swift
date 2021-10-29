@@ -25,6 +25,8 @@ class HistoryListVC : LoadViewController {
         super.viewDidLoad()
         configureUI()
         refreshTableView()
+        NotificationHelper.shared.requestForPermission()
+
     }
    
     override func viewWillAppear(_ animated: Bool) {
@@ -36,6 +38,8 @@ class HistoryListVC : LoadViewController {
         super.didReceiveMemoryWarning()
         AlertManager.showAlert(title: "Memory Warning", message: "Please restart the app", alertAction: nil , viewController: self)
     }
+    
+    
 
     
     
@@ -51,6 +55,7 @@ class HistoryListVC : LoadViewController {
         }
 
     }
+
     
     private func configureUI() {
         view.addSubview(HistoryTableView)
