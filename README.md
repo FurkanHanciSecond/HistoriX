@@ -15,6 +15,7 @@ Some of the feature HistoriX has:
 - Responsive User Interface (iPad and iPhone)
 - Show detail of what happened today in history
 - Pull To Refresh (UIRerfresh Control)
+- Share event with other people
 - %100 Programmatically UI with UIKit
 
 
