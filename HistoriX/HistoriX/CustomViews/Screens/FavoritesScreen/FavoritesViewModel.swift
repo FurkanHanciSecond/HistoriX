@@ -11,7 +11,7 @@ protocol FavoritesListViewModelProtocol {
     var title : String { get }
     var viewBackground : UIColor { get }
     var events : [Events]? { get }
-    func getEvents(content: @escaping () -> Void, errorContent: @escaping (HistoryError) -> Void)
+    func fetchEvents(content: @escaping () -> Void, errorContent: @escaping (HistoryError) -> Void)
 }
 
 final class FavoritesListViewModel : FavoritesListViewModelProtocol {
@@ -27,7 +27,7 @@ final class FavoritesListViewModel : FavoritesListViewModelProtocol {
         self.model = model
     }
     
-    func getEvents(content: @escaping () -> Void, errorContent: @escaping (HistoryError) -> Void) {
+    func fetchEvents(content: @escaping () -> Void, errorContent: @escaping (HistoryError) -> Void) {
         model.fetchEvents(content: content, errorContent: errorContent)
     }
     

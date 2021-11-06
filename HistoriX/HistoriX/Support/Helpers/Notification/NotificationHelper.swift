@@ -36,23 +36,22 @@ class NotificationHelper  {
     }
     
     func setWeekdayReminder(weekday: Int) {
-            let center = UNUserNotificationCenter.current()
-            let content = UNMutableNotificationContent()
-            content.title = "Hey HistoriX User!"
-            content.body = "Come and see what happened 😄"
-            content.sound = UNNotificationSound.default
-            var dateComponents = DateComponents()
-            dateComponents.hour = 8
-            dateComponents.minute = 30
-            dateComponents.weekday = weekday
-            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
-          //  let request = UNNotificationRequest(identifier: String(weekday), content: content, trigger: trigger)
-            let request = UNNotificationRequest(identifier: String(weekday) , content: content, trigger: trigger)
+        let notificationContent = UNMutableNotificationContent()
+        notificationContent.title = Constants.Notification.title
+        notificationContent.body = Constants.Notification.body
+        notificationContent.badge = NSNumber(value: 1)
+        notificationContent.sound = .defaultCritical
+                        
+        var datComp = DateComponents()
+        datComp.hour = 8
+        datComp.minute = 00
+        let trigger = UNCalendarNotificationTrigger(dateMatching: datComp, repeats: true)
+        let request = UNNotificationRequest(identifier: Constants.Notification.id, content: notificationContent, trigger: trigger)
+                        UNUserNotificationCenter.current().add(request) { (error : Error?) in
+                            if let theError = error {
+                                print(theError.localizedDescription)
+                            }
+                        }
+}
 
-            center.add(request) { (error) in
-                if let error = error {
-                    print("Notification Error: ", error)
-                }
-            }
-        }
 }

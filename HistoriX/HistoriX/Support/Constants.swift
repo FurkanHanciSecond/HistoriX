@@ -19,9 +19,8 @@ struct Constants {
     
     struct Notification {
         static let id = "HistoryNotification"
-        static let title = ""
-        static let subtitle = ""
-        static let body = ""
+        static let title = "Hey! Good Morning"
+        static let body = "Come and see what happened today in history 😄"
     }
     
     struct Text {

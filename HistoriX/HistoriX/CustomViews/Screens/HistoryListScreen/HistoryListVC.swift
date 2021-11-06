@@ -6,7 +6,6 @@
 //
 
 import UIKit
-
 class HistoryListVC : LoadViewController {
     
     public var viewModel = HistoryListViewModel() {
@@ -47,6 +46,7 @@ class HistoryListVC : LoadViewController {
     
     private func getDatas() {
         loadingView()
+        generateHaptic()
         viewModel.getDatas { [weak self] in
             self?.HistoryTableView.reloadData()
             self?.dismissLoading()
@@ -54,6 +54,12 @@ class HistoryListVC : LoadViewController {
             AlertManager.showAlert(message: err.rawValue, viewController: self)
         }
 
+    }
+    
+    
+    private func generateHaptic() {
+      let feedbackGenerator = UISelectionFeedbackGenerator()
+        feedbackGenerator.selectionChanged()
     }
 
     
@@ -114,6 +120,7 @@ extension HistoryListVC :  UITableViewDataSource {
 
 }
 
+// MARK: - UITableViewDelegate
 
 extension HistoryListVC : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

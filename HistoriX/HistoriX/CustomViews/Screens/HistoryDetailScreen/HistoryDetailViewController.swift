@@ -12,7 +12,6 @@ class HistoryDetailViewController: UIViewController {
     private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     private var events : [Events]?
     private let pulse = CASpringAnimation(keyPath: "transform.scale")
-    
     public var viewModel : HistoryDetailViewModel {
         didSet {
             setUp()
@@ -79,9 +78,10 @@ class HistoryDetailViewController: UIViewController {
     }
     
     @objc func shareEvent() {
+        let appIcon = UIImage(named: "HistoriX-Icon")
         let appURl = NSURL(string:"https://github.com/Furkanus/HistoriX-1")
-        let text = "Hey! I like \(viewModel.datas!.text + " ")this event today in history, check this out! "
-        let textToShare = [text , appURl ?? ""] as [Any]
+        let text = "Hey! Do you want to look, \(viewModel.datas!.text + "In \(viewModel.datas!.year)") this event today in history, check this out! "
+        let textToShare = [text , appURl ?? "" , appIcon!] as [Any]
         let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
         activityViewController.popoverPresentationController?.sourceView = self.view
         activityViewController.excludedActivityTypes = [ UIActivity.ActivityType.airDrop, UIActivity.ActivityType.postToFacebook ]
