@@ -43,7 +43,6 @@ class HistoryDetailViewController: UIViewController {
     
     private func getDetailInfo() {
         viewModel.getData {
-            // print(self.viewModel.datas)
         } errorContent: { err in
             AlertManager.showAlert(message: err.rawValue, viewController: self)
         }
@@ -84,7 +83,7 @@ class HistoryDetailViewController: UIViewController {
         let textToShare = [text , appURl ?? "" , appIcon!] as [Any]
         let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
         activityViewController.popoverPresentationController?.sourceView = self.view
-        activityViewController.excludedActivityTypes = [ UIActivity.ActivityType.airDrop, UIActivity.ActivityType.postToFacebook ]
+        activityViewController.excludedActivityTypes = [ UIActivity.ActivityType.airDrop, UIActivity.ActivityType.mail , UIActivity.ActivityType.postToFacebook , UIActivity.ActivityType.postToTwitter]
         
         self.present(activityViewController, animated: true, completion: nil)
         
